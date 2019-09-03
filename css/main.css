@@ -339,12 +339,13 @@ template {
 [hidden] {
   display: none; }
 
+/*==========  Custom  ==========*/
 html {
-  background-color: #000; }
+  background-color: #000;
+}
 
 body {
+  width: 1200px;
   background-color: #849d8f;
-  max-width: 1200px;
-  margin: auto; }
-
-/*==========  Custom  ==========*/
+  margin: auto;
+}

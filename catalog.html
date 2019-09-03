@@ -7,20 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">   
   </head>
   <body>
-    <header class="page-header">      
-      <img src="img/logo.png" class="logo" width="154" height="64" alt="GllasyShop">      
+    <header class="page-header">
+      <div class="logo">      
+        <a href="index.html"><img src="img/logo.png" class="logo" width="154" height="64" alt="GllasyShop"></a>
+      </div>      
       <nav class="header-nav">
-        <a href="#">Каталог</a>
-        <a href="#">Доставка и оплата</a>
-        <a href="#">О Компании</a>        
+        <ul>
+          <li>
+            <a href="#">Каталог</a>
+            <ul>
+              <li><a href="#"><b>Новинки</b></a></li>
+              <li><a href="catalog.html">Сливочное</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">О Компании</a></li>
+        </ul>                
       </nav>
-      <section class="header-form">
-        <button>Поиск</button>
-        <button>Вход</button>
-        <button>Корзина</button>
-        <p>С 10 до 20, ежедневно</p>
-        <p>8 812 450-25-25</p>
-      </section>
+      <div class="header-form">        
+        <form action="" method="get">
+          <input name="search" placeholder="Что ищем?" type="search">
+          <button type="submit">Поиск</button>
+        </form>        
+        <a href="#">Вход</a>
+        <a href="#">Корзина</a>        
+      </div>
+      <div class="info">
+        <p>С 10 до 20, ежедневно<br>
+        8 812 450-25-25</p>
+      </div>     
     </header>
     <main>
       <nav class="main-nav">

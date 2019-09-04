@@ -10,7 +10,8 @@
     <header class="page-header">
       <div class="logo">      
         <a href="index.html"><img src="img/logo.png" class="logo" width="154" height="64" alt="GllasyShop"></a>
-      </div>      
+      </div>
+
       <nav class="header-nav">
         <ul>
           <li>
@@ -27,110 +28,171 @@
           <li><a href="#">О Компании</a></li>
         </ul>                
       </nav>
-      <div class="header-form">        
-        <form action="" method="get">
-          <input name="search" placeholder="Что ищем?" type="search">
-          <button type="submit">Поиск</button>
-        </form>        
-        <a href="#">Вход</a>
-        <a href="#">Корзина</a>        
-      </div>
-      <div class="info">
-        <p>С 10 до 20, ежедневно<br>
-        8 812 450-25-25</p>
-      </div>     
+
+      <ul class="header-form">
+        <li>
+          <a href="#">Поиск</a>        
+          <form action="#" method="get" hidden>
+            <input type="text" name="search" placeholder="Что ищем?">          
+          </form>
+        </li>
+        <li>
+          <a href="#">Вход</a>
+          <form action="#" method="post" hidden>
+            <input type="text" name="emil" placeholder="Электроная почта">
+            <input type="password" name="password" placeholder="Пароль">
+            <input type="submit" name="enter" value="Войти">
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>          
+          </form>
+        </li>
+        <li>
+          <a href="#">Корзина</a>
+        </li>
+        <li>
+          <p>С 10 до 20, ежедневно<br>
+          8 812 450-25-25</p>
+        </li>
+      </ul>
     </header>
+
     <main>
-      <nav class="main-nav">
-        <a href="#">Главная</a>
+      <nav class="breadcrumbs">
+        <a href="index.html">Главная</a>
         <a href="#">Каталог</a>
         <a href="#">Сливочное</a>
       </nav>
+
       <h2>Сливочное мороженое</h2>
+
       <section class="form-group">
-        <label for="range-price">Цена: 100 руб. - 500 руб.</label>
-        <input type="range" min="0" max="850" step="1" name="price" id="range-price">
+        <form action="#" method="post">
+          <div class="sort-view sort">
+            <p>Сортировка:</p>
+            <select name="sort">
+              <option>по популярности</option>
+              <option>сначала недорогие</option>
+              <option>сначала дорогие</option>
+              <option>по жирности</option>
+            </select>
+          </div>
+
+          <div class="sort-price sort">
+            <label><p>Цена:</p>
+            <input type="range" name="price" min="1" max="1000" step="1"></label>
+          </div>
+
+          <div class="sort-fat sort">
+            <p>Жирность:</p>
+            <label><input type="radio" name="fat"> 0% </label>
+            <label><input type="radio" name="fat" checked> до 10% </label>
+            <label><input type="radio" name="fat"> до 30% </label>
+            <label><input type="radio" name="fat"> выше 30% </label>
+          </div>
+
+          <div class="sort-fill sort">
+            <p>Наполнители:</p>
+            <label><input type="checkbox" name="choko" checked>шоколадные</label>
+            <label><input type="checkbox" name="sugar" checked>сахарные присыпки</label>
+            <label><input type="checkbox" name="fruits">фрукты</label>
+            <label><input type="checkbox" name="syrups">сиропы</label>
+            <label><input type="checkbox" name="jams">джемы</label>
+          </div>
+
+          <input type="submit" value="Применить">
+        </form>
       </section>
+
       <section class="catalog">
         <li class="catalog-item">
-          <img src="#">
+          <img src="img/item1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-          <p>310 р.кг</p>
+          <p>310 ₽<span>/кг</span></p>
         </li>
         <li class="catalog-item">
-          <img src="#">
+          <img src="img/item2.png" width="267" height="267" alt="">
           <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-          <p>310 р.кг</p>
+          <p>310 ₽<span>/кг</span></p>
         </li>
         <li class="catalog-item">
-          <img src="#">
+          <img src="img/item3.png" width="267" height="267" alt="">
           <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-          <p>310 р.кг</p>
+          <p>310 ₽<span>/кг</span></p>
         </li>
         <li class="catalog-item">
-          <img src="#">
+          <img src="img/item4.png" width="267" height="267" alt="">
           <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-          <p>310 р.кг</p>
+          <p>310 ₽<span>/кг</span></p>
         </li>
         <li class="catalog-item">
-          <img src="#">
+          <img src="img/item5.png" width="267" height="267" alt="">
           <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-          <p>310 р.кг</p>
+          <p>310 ₽<span>/кг</span></p>
         </li>
         <li class="catalog-item">
-          <img src="#">
+          <img src="img/item6.png" width="267" height="267" alt="">
           <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-          <p>310 р.кг</p>
+          <p>310 ₽<span>/кг</span></p>
         </li>
         <li class="catalog-item">
-          <img src="#">
+          <img src="img/item7.png" width="267" height="267" alt="">
           <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-          <p>310 р.кг</p>
+          <p>310 ₽<span>/кг</span></p>
         </li>
         <li class="catalog-item">
-          <img src="#">
+          <img src="img/item8.png" width="267" height="267" alt="">
           <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-          <p>310 р.кг</p>
+          <p>310 ₽<span>/кг</span></p>
         </li>
         <li class="catalog-item">
-          <img src="#">
+          <img src="img/item9.png" width="267" height="267" alt="">
           <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-          <p>310 р.кг</p>
+          <p>310 ₽<span>/кг</span></p>
         </li>
         <li class="catalog-item">
-          <img src="#">
+          <img src="img/item10.png" width="267" height="267" alt="">
           <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-          <p>310 р.кг</p>
+          <p>310 ₽<span>/кг</span></p>
         </li>
         <li class="catalog-item">
-          <img src="#">
+          <img src="img/item11.png" width="267" height="267" alt="">
           <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-          <p>310 р.кг</p>
+          <p>310 ₽<span>/кг</span></p>
         </li>
         <li class="catalog-item">
-          <img src="#">
+          <img src="img/item12.png" width="267" height="267" alt="">
           <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-          <p>310 р.кг</p>
+          <p>310 ₽<span>/кг</span></p>
         </li>
       </section>
-      <div class="controls">1 2 3 4 5</div>
+
+      <div class="controls">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+      </div>
     </main>
+
     <footer class="page-footer">
       <ul class="social">
-        <li>twitter</li>
-        <li>instagram</li>
-        <li>facebook</li>
-        <li>vk</li>
+        <li><a href="#">twitter</a></li>
+        <li><a href="#">instagram</a></li>
+        <li><a href="#">facebook</a></li>
+        <li><a href="#">vk</a></li>
       </ul>
+
       <ul class="footer-nav">
         <li><a href="#">Для поставщиков</a></li>
         <li><a href="#">Наши документы</a></li>
         <li><a href="#">О производстве</a></li>
         <li><a href="#">Экологические стандарты</a></li>   
       </ul>
-      <section class="copyright">
-        <p>Сделано в HTML Academy 2019</p>
-      </section>
+
+      <div class="copyright">
+        <a href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy 2019</a>
+      </div>
     </footer>
   </body>
 </html>

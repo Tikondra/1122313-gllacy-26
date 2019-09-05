@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Gllasy</title>
+    <title>Gllaсy</title>
     <meta charset="utf-8">     
     <link rel="stylesheet" href="css/main.css">    
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">   
   </head>
   <body>
     <header class="page-header">
-      <div class="logo">      
-        <a href="index.html"><img src="img/logo.png" class="logo" width="154" height="64" alt="GllasyShop"></a>
-      </div>
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" width="154" height="64" alt="GllasyShop">
+      </a>
+      
 
       <nav class="header-nav">
         <ul>
@@ -18,7 +19,7 @@
             <a href="#">Каталог</a>
             <ul>
               <li><a href="#"><b>Новинки</b></a></li>
-              <li><a href="catalog.html">Сливочное</a></li>
+              <li><a href="#">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
               <li><a href="#">Мелорин</a></li>
@@ -48,12 +49,34 @@
         </li>
         <li>
           <a href="#">Корзина</a>
-        </li>
-        <li>
-          <p>С 10 до 20, ежедневно<br>
-          8 812 450-25-25</p>
-        </li>
+        </li>        
       </ul>
+
+      <div class="modal-basket" hidden>
+        <table border="1">
+          <tr>
+            <td><button>X</button></td>
+            <td><img src="img/mini1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+            <td>Пломбир с апельсиновым джемом</td>
+            <td>1,5 х 200 руб</td>
+            <td>300 руб</td>
+          </tr>
+          <tr>
+            <td><button>X</button></td>
+            <td><img src="img/mini2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+            <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+            <td>1,5 х 300 руб</td>
+            <td>450 руб</td>
+          </tr>
+          <tr>
+            <td colspan="5">Итого: 750 руб</td>
+          </tr>
+        </table>
+        <a href="#">Оформить заказ</a>
+      </div>
+
+      <p>С 10 до 20, ежедневно<br>
+      8 812 450-25-25</p>
     </header>
 
     <main>
@@ -84,22 +107,22 @@
 
           <div class="sort-fat sort">
             <p>Жирность:</p>
-            <label><input type="radio" name="fat"> 0% </label>
-            <label><input type="radio" name="fat" checked> до 10% </label>
-            <label><input type="radio" name="fat"> до 30% </label>
-            <label><input type="radio" name="fat"> выше 30% </label>
+            <label><input type="radio" name="fat" value="0%"> 0% </label>
+            <label><input type="radio" name="fat" value="до 10%" checked> до 10% </label>
+            <label><input type="radio" name="fat" value="до 30%"> до 30% </label>
+            <label><input type="radio" name="fat" value="выше 30%"> выше 30% </label>
           </div>
 
           <div class="sort-fill sort">
             <p>Наполнители:</p>
-            <label><input type="checkbox" name="choko" checked>шоколадные</label>
-            <label><input type="checkbox" name="sugar" checked>сахарные присыпки</label>
-            <label><input type="checkbox" name="fruits">фрукты</label>
-            <label><input type="checkbox" name="syrups">сиропы</label>
-            <label><input type="checkbox" name="jams">джемы</label>
+            <label><input type="checkbox" name="choko" value="шоколадные" checked>шоколадные</label>
+            <label><input type="checkbox" name="sugar" value="сахарные присыпки" checked>сахарные присыпки</label>
+            <label><input type="checkbox" name="fruits" value="фрукты">фрукты</label>
+            <label><input type="checkbox" name="syrups" value="сиропы">сиропы</label>
+            <label><input type="checkbox" name="jams" value="джемы">джемы</label>
           </div>
 
-          <input type="submit" value="Применить">
+          <button type="submit">Применить</button>
         </form>
       </section>
 
@@ -107,97 +130,74 @@
         <ul>
           <li class="catalog-item">
             <img src="img/item1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-            <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             <p>310 ₽<span>/кг</span></p>
           </li>
           <li class="catalog-item">
             <img src="img/item2.png" width="267" height="267" alt="">
-            <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             <p>310 ₽<span>/кг</span></p>
           </li>
           <li class="catalog-item">
             <img src="img/item3.png" width="267" height="267" alt="">
-            <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             <p>310 ₽<span>/кг</span></p>
           </li>
           <li class="catalog-item">
             <img src="img/item4.png" width="267" height="267" alt="">
-            <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             <p>310 ₽<span>/кг</span></p>
           </li>
           <li class="catalog-item">
             <img src="img/item5.png" width="267" height="267" alt="">
-            <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             <p>310 ₽<span>/кг</span></p>
           </li>
           <li class="catalog-item">
             <img src="img/item6.png" width="267" height="267" alt="">
-            <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             <p>310 ₽<span>/кг</span></p>
           </li>
           <li class="catalog-item">
             <img src="img/item7.png" width="267" height="267" alt="">
-            <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             <p>310 ₽<span>/кг</span></p>
           </li>
           <li class="catalog-item">
             <img src="img/item8.png" width="267" height="267" alt="">
-            <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             <p>310 ₽<span>/кг</span></p>
           </li>
           <li class="catalog-item">
             <img src="img/item9.png" width="267" height="267" alt="">
-            <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             <p>310 ₽<span>/кг</span></p>
           </li>
           <li class="catalog-item">
             <img src="img/item10.png" width="267" height="267" alt="">
-            <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             <p>310 ₽<span>/кг</span></p>
           </li>
           <li class="catalog-item">
             <img src="img/item11.png" width="267" height="267" alt="">
-            <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             <p>310 ₽<span>/кг</span></p>
           </li>
           <li class="catalog-item">
             <img src="img/item12.png" width="267" height="267" alt="">
-            <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             <p>310 ₽<span>/кг</span></p>
           </li>
         </ul>  
       </section>
 
-      <div class="controls">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-      </div>
-
-      <div class="modal-bascet" hidden>
-        <table border="1">
-          <tr>
-            <td><button>X</button></td>
-            <td><img src="img/mini1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-            <td>Пломбир с апельсиновым джемом</td>
-            <td>1,5 х 200 руб</td>
-            <td>300 руб</td>
-          </tr>
-          <tr>
-            <td><button>X</button></td>
-            <td><img src="img/mini2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-            <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-            <td>1,5 х 300 руб</td>
-            <td>450 руб</td>
-          </tr>
-          <tr>
-            <td colspan="5">Итого: 750 руб</td>
-          </tr>
-        </table>
-        <a href="#">Оформить заказ</a>
-      </div>
+      <ul class="controls">
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+      </ul>      
     </main>
 
     <footer class="page-footer">
@@ -221,5 +221,6 @@
         Сделано в HTML Academy 2019</a>
       </div>
     </footer>
+
   </body>
 </html>

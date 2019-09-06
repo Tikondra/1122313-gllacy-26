@@ -8,9 +8,8 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="#" class="logo">
-        <img src="img/logo.png" width="154" height="64" alt="GllasyShop">
-      </a>
+
+      <a class="logo"><img src="img/logo.png" width="154" height="64" alt="GllasyShop"></a>
 
       <nav class="header-nav">
         <ul>
@@ -27,15 +26,16 @@
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О Компании</a></li>
         </ul>
+
         <ul class="header-form">
           <li>
-            <a href="#">Поиск</a>        
+            <button type="button">Поиск</button>        
             <form action="#" method="get" hidden>
-              <input type="text" name="search" placeholder="Что ищем?">          
+              <input type="text" name="search" placeholder="Что ищем?">
             </form>
           </li>
           <li>
-            <a href="#">Вход</a>
+            <button type="button">Вход</button>
             <form action="#" method="post" hidden>
               <input type="text" name="emil" placeholder="Электроная почта">
               <input type="password" name="password" placeholder="Пароль">
@@ -44,10 +44,8 @@
               <a href="#">Новая регистрация</a>          
             </form>
           </li>
-          <li>
-            <a href="#">Корзина</a>
-          </li>        
-        </ul>                
+          <li><button type="button">Корзина</button></li>        
+        </ul>               
       </nav>      
 
       <p>С 10 до 20, ежедневно<br>
@@ -56,46 +54,50 @@
 
     <main>
       <h1>Glacy Shop</h1>
+
       <section class="promo">
-        <h2>Акции</h2>
-        <div class="promo1">
-          <img src="img/promo1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">        
-          <h3>Крем-брюле и пломбир с малиновым джемом</h3>
-          <a href="#">Давайте оба!</a>
-        </div>
+        <h2>Акция</h2>
 
-        <div class="promo2" hidden>
-          <img src="img/promo2.png" width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">        
-          <h3>Шоколадный пломбир и лимонный сорбет</h3>
-          <a href="#">Давайте оба!</a>
-        </div>
+        <ul>
+          <li class="promo1">
+            <img src="img/promo1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">        
+            <h3>Крем-брюле и пломбир с малиновым джемом</h3>
+            <a href="#">Давайте оба!</a>
+          </li>
+          <li class="promo2" hidden>
+            <img src="img/promo2.png" width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">        
+            <h3>Шоколадный пломбир и лимонный сорбет</h3>
+            <a href="#">Давайте оба!</a>
+          </li>
+          <li class="promo3" hidden>
+            <img src="img/promo3.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет">        
+            <h3>Пломбир с помадкой и клубничный щербет</h3>
+            <a href="#">Давайте оба!</a>
+          </li>
+        </ul>
 
-        <div class="promo3" hidden>
-          <img src="img/promo3.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет">        
-          <h3>Пломбир с помадкой и клубничный щербет</h3>
-          <a href="#">Давайте оба!</a>
-        </div>
-
-        <div class="promo-control">
-          <button type="button">1</button>
-          <button type="button">2</button>
-          <button type="button">3</button>          
-        </div>
+        <ul class="promo-control">
+          <li><button type="button">1</button></li>
+          <li><button type="button">2</button></li>
+          <li><button type="button">3</button></li>
+        </ul>
       </section>
 
       <section class="special">
         <h2>Спецпредложения</h2>
-        <div class="special-item">
-          <h3>Малинка даром!</h3>
-          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a href="#">Хочу варенье!</a>
-        </div>
 
-        <div class="special-item">
-          <h3>Шоколадки даром!</h3>
-          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <a href="#">Хочу шоколадки!</a>
-        </div>
+        <ul>
+          <li class="special-item">
+            <h3>Малинка даром!</h3>
+            <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+            <a href="#">Хочу варенье!</a>
+          </li>
+          <li class="special-item">
+            <h3>Шоколадки даром!</h3>
+            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+            <a href="#">Хочу шоколадки!</a>
+          </li>
+        </ul>        
       </section>
 
       <section class="hits">
@@ -146,7 +148,7 @@
       <article class="blog-item">
         <h2>В блоге</h2>
         <p>Новое в нашем блоге</p>
-        <a href="#"><h3>10 способов сервировки фруктовых щербетов к столу</h3></a>
+        <h3><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h3>
       </article>
 
       <section class="mailing">
@@ -161,9 +163,8 @@
 
       <section class="map">
         <h2>Карта</h2>
-        <div class="map-img">
-          <img src="img/map.png" width="1200" height="430" alt="ул.Большая Конюшенная 19.8, Санкт-Петербург">
-        </div>
+        
+        <img src="img/map.png" width="1200" height="430" alt="ул.Большая Конюшенная 19.8, Санкт-Петербург">        
 
         <div class="contacts">
           <p>Адрес главного офиса <br>
@@ -172,7 +173,7 @@
           <p>Для заказов по телефону:<br>
             <b>8 812 450-25-25</b><br>
           (c 10 до 20 ежедневно)</p>
-          <a href="#">Форма обратной связи</a>
+          <button type="button">Форма обратной связи</button>          
         </div>        
       </section>      
     </main>
@@ -192,11 +193,10 @@
         <li><a href="#">Экологические стандарты</a></li>   
       </ul>
 
-      <div class="copyright">
+      <p class="copyright">
         <a href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/html.png" width="108" height="39" alt="HTML Academy">
-        Сделано в HTML Academy 2019</a>
-      </div>
+        Сделано в HTML Academy 2019</a></p>
     </footer>
     <div class="modal-feedback" hidden>
       <p><b>Мы обязательно вам ответим!</b></p>

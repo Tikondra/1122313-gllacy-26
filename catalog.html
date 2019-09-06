@@ -10,8 +10,7 @@
     <header class="page-header">
       <a href="index.html" class="logo">
         <img src="img/logo.png" width="154" height="64" alt="GllasyShop">
-      </a>
-      
+      </a>      
 
       <nav class="header-nav">
         <ul>
@@ -27,30 +26,29 @@
           </li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О Компании</a></li>
+        </ul>
+        <ul class="header-form">
+          <li>
+            <a href="#">Поиск</a>        
+            <form action="#" method="get" hidden>
+              <input type="text" name="search" placeholder="Что ищем?">          
+            </form>
+          </li>
+          <li>
+            <a href="#">Вход</a>
+            <form action="#" method="post" hidden>
+              <input type="text" name="emil" placeholder="Электроная почта">
+              <input type="password" name="password" placeholder="Пароль">
+              <input type="submit" name="enter" value="Войти">
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>          
+            </form>
+          </li>
+          <li>
+            <a href="#">Корзина</a>
+          </li>        
         </ul>                
-      </nav>
-
-      <ul class="header-form">
-        <li>
-          <a href="#">Поиск</a>        
-          <form action="#" method="get" hidden>
-            <input type="text" name="search" placeholder="Что ищем?">          
-          </form>
-        </li>
-        <li>
-          <a href="#">Вход</a>
-          <form action="#" method="post" hidden>
-            <input type="text" name="emil" placeholder="Электроная почта">
-            <input type="password" name="password" placeholder="Пароль">
-            <input type="submit" name="enter" value="Войти">
-            <a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистрация</a>          
-          </form>
-        </li>
-        <li>
-          <a href="#">Корзина</a>
-        </li>        
-      </ul>
+      </nav> 
 
       <div class="modal-basket" hidden>
         <table border="1">
@@ -86,117 +84,116 @@
         <a href="#">Сливочное</a>
       </nav>
 
-      <h2>Сливочное мороженое</h2>
+      <h1>Сливочное мороженое</h1>
+      
+      <form action="#" method="post">
+        <div class="sort-view sort">
+          <label for="sort">Сортировка:</label>
+          <select name="sort" id="sort">
+            <option>по популярности</option>
+            <option>сначала недорогие</option>
+            <option>сначала дорогие</option>
+            <option>по жирности</option>
+          </select>
+        </div>
 
-      <section class="form-group">
-        <form action="#" method="post">
-          <div class="sort-view sort">
-            <p>Сортировка:</p>
-            <select name="sort">
-              <option>по популярности</option>
-              <option>сначала недорогие</option>
-              <option>сначала дорогие</option>
-              <option>по жирности</option>
-            </select>
-          </div>
+        <div class="sort-price sort">
+          <label>Цена:
+          <input type="range" name="price" min="1" max="1000" step="1"></label>
+        </div>
 
-          <div class="sort-price sort">
-            <label>Цена:
-            <input type="range" name="price" min="1" max="1000" step="1"></label>
-          </div>
+        <div class="sort-fat sort">
+          <p>Жирность:</p>
+          <label><input type="radio" name="fat" value="0%"> 0% </label>
+          <label><input type="radio" name="fat" value="до 10%" checked> до 10% </label>
+          <label><input type="radio" name="fat" value="до 30%"> до 30% </label>
+          <label><input type="radio" name="fat" value="выше 30%"> выше 30% </label>
+        </div>
 
-          <div class="sort-fat sort">
-            <p>Жирность:</p>
-            <label><input type="radio" name="fat" value="0%"> 0% </label>
-            <label><input type="radio" name="fat" value="до 10%" checked> до 10% </label>
-            <label><input type="radio" name="fat" value="до 30%"> до 30% </label>
-            <label><input type="radio" name="fat" value="выше 30%"> выше 30% </label>
-          </div>
+        <div class="sort-fill sort">
+          <p>Наполнители:</p>
+          <label><input type="checkbox" name="choko" value="шоколадные" checked>шоколадные</label>
+          <label><input type="checkbox" name="sugar" value="сахарные присыпки" checked>сахарные присыпки</label>
+          <label><input type="checkbox" name="fruits" value="фрукты">фрукты</label>
+          <label><input type="checkbox" name="syrups" value="сиропы">сиропы</label>
+          <label><input type="checkbox" name="jams" value="джемы">джемы</label>
+        </div>
 
-          <div class="sort-fill sort">
-            <p>Наполнители:</p>
-            <label><input type="checkbox" name="choko" value="шоколадные" checked>шоколадные</label>
-            <label><input type="checkbox" name="sugar" value="сахарные присыпки" checked>сахарные присыпки</label>
-            <label><input type="checkbox" name="fruits" value="фрукты">фрукты</label>
-            <label><input type="checkbox" name="syrups" value="сиропы">сиропы</label>
-            <label><input type="checkbox" name="jams" value="джемы">джемы</label>
-          </div>
-
-          <button type="submit">Применить</button>
-        </form>
-      </section>
+        <button type="submit">Применить</button>
+      </form>
 
       <section class="catalog">
+        <h2>Каталог</h2>
         <ul>
           <li class="catalog-item">
             <img src="img/item1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <a href="#"><h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3></a>
             <p>310 ₽<span>/кг</span></p>
           </li>
           <li class="catalog-item">
             <img src="img/item2.png" width="267" height="267" alt="">
-            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-            <p>310 ₽<span>/кг</span></p>
+            <a href="#"><h3>Сливочно-кофейное с кусочками шоколада</h3></a>
+            <p>380 ₽<span>/кг</span></p>
           </li>
           <li class="catalog-item">
             <img src="img/item3.png" width="267" height="267" alt="">
-            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-            <p>310 ₽<span>/кг</span></p>
+            <a href="#"><h3>Сливочно-клубничное с присыпкой из белого шоколада</h3></a>
+            <p>355 ₽<span>/кг</span></p>
           </li>
           <li class="catalog-item">
             <img src="img/item4.png" width="267" height="267" alt="">
-            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-            <p>310 ₽<span>/кг</span></p>
+            <a href="#"><h3>Сливочное крем-брюле с карамельной подливкой</h3></a>
+            <p>415 ₽<span>/кг</span></p>
           </li>
           <li class="catalog-item">
             <img src="img/item5.png" width="267" height="267" alt="">
-            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-            <p>310 ₽<span>/кг</span></p>
+            <a href="#"><h3>Сливочное с брусничным джемом</h3></a>
+            <p>325 ₽<span>/кг</span></p>
           </li>
           <li class="catalog-item">
             <img src="img/item6.png" width="267" height="267" alt="">
-            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-            <p>310 ₽<span>/кг</span></p>
+            <a href="#"><h3>Сливочно-черничное с цельными ягодами черники</h3></a>
+            <p>410 ₽<span>/кг</span></p>
           </li>
           <li class="catalog-item">
             <img src="img/item7.png" width="267" height="267" alt="">
-            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-            <p>310 ₽<span>/кг</span></p>
+            <a href="#"><h3>Сливочно-лимонное с карамельной присыпкой</h3></a>
+            <p>375 ₽<span>/кг</span></p>
           </li>
           <li class="catalog-item">
             <img src="img/item8.png" width="267" height="267" alt="">
-            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-            <p>310 ₽<span>/кг</span></p>
+            <a href="#"><h3>Сливочное с шоколадной стружкой</h3></a>
+            <p>320 ₽<span>/кг</span></p>
           </li>
           <li class="catalog-item">
             <img src="img/item9.png" width="267" height="267" alt="">
-            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-            <p>310 ₽<span>/кг</span></p>
+            <a href="#"><h3>Сливочно-ванильное с кусочками шоколада</h3></a>
+            <p>440 ₽<span>/кг</span></p>
           </li>
           <li class="catalog-item">
             <img src="img/item10.png" width="267" height="267" alt="">
-            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-            <p>310 ₽<span>/кг</span></p>
+            <a href="#"><h3>Сливочноe с ментоловым сиропом</h3></a>
+            <p>435 ₽<span>/кг</span></p>
           </li>
           <li class="catalog-item">
             <img src="img/item11.png" width="267" height="267" alt="">
-            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-            <p>310 ₽<span>/кг</span></p>
+            <a href="#"><h3>Сливочное с кусочками черного шоколада</h3></a>
+            <p>355 ₽<span>/кг</span></p>
           </li>
           <li class="catalog-item">
             <img src="img/item12.png" width="267" height="267" alt="">
-            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-            <p>310 ₽<span>/кг</span></p>
+            <a href="#"><h3>Сливочное с мятным сиропом</h3></a>
+            <p>420 ₽<span>/кг</span></p>
           </li>
         </ul>  
       </section>
 
       <ul class="controls">
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
+        <li><button type="button">1</button></li>
+        <li><button type="button">2</button></li>
+        <li><button type="button">3</button></li>
+        <li><button type="button">4</button></li>
+        <li><button type="button">5</button></li>
       </ul>      
     </main>
 

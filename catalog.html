@@ -2,7 +2,8 @@
 <html lang="ru">
   <head>
     <title>Gllaсy</title>
-    <meta charset="utf-8">     
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">     
     <link rel="stylesheet" href="css/main.css">    
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">   
   </head>
@@ -45,32 +46,35 @@
               <a href="#">Новая регистрация</a>          
             </form>
           </li>
-          <li><a href="#">Корзина</a></li>        
+          <li>
+            <a href="#">Корзина</a>
+            <div class="modal-basket" hidden>
+              <table border="1">
+                <tr>
+                  <td><button>X</button></td>
+                  <td><img src="img/mini1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+                  <td>Пломбир с апельсиновым джемом</td>
+                  <td>1,5 х 200 руб</td>
+                  <td>300 руб</td>
+                </tr>
+                <tr>
+                  <td><button>X</button></td>
+                  <td><img src="img/mini2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td>1,5 х 300 руб</td>
+                  <td>450 руб</td>
+                </tr>
+                <tr>
+                  <td colspan="5">Итого: 750 руб</td>
+                </tr>
+              </table>
+              <a href="#">Оформить заказ</a>
+            </div>
+          </li>        
         </ul>                
       </nav> 
 
-      <div class="modal-basket" hidden>
-        <table border="1">
-          <tr>
-            <td><button>X</button></td>
-            <td><img src="img/mini1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-            <td>Пломбир с апельсиновым джемом</td>
-            <td>1,5 х 200 руб</td>
-            <td>300 руб</td>
-          </tr>
-          <tr>
-            <td><button>X</button></td>
-            <td><img src="img/mini2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-            <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-            <td>1,5 х 300 руб</td>
-            <td>450 руб</td>
-          </tr>
-          <tr>
-            <td colspan="5">Итого: 750 руб</td>
-          </tr>
-        </table>
-        <a href="#">Оформить заказ</a>
-      </div>
+      
 
       <p>С 10 до 20, ежедневно<br>
       8 812 450-25-25</p>

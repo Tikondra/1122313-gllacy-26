@@ -8,95 +8,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">   
   </head>
   <body>
-    <header class="page-header">
+    <header class="header">
 
-      <a class="logo"><img src="img/logo.png" width="154" height="64" alt="GllasyShop"></a>
+      <nav class="nav">
+        <a class="logo"><img class="logo__img" src="img/logo.png" width="154" height="64" alt="GllasyShop"></a>
 
-      <nav class="header-nav">
-        <ul>
-          <li>
-            <a href="#">Каталог</a>
-            <ul>
-              <li><a href="#"><b>Новинки</b></a></li>
-              <li><a href="catalog.html">Сливочное</a></li>
-              <li><a href="#">Щербеты</a></li>
-              <li><a href="#">Фруктовый лед</a></li>
-              <li><a href="#">Мелорин</a></li>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Каталог</a>
+            <ul class="hover-list" hidden>
+              <li class="hover-list__item"><a class="hover-list__link" href="#">Новинки</a></li>
+              <li class="hover-list__item"><a class="hover-list__link" href="catalog.html">Сливочное</a></li>
+              <li class="hover-list__item"><a class="hover-list__link" href="#">Щербеты</a></li>
+              <li class="hover-list__item"><a class="hover-list__link" href="#">Фруктовый лед</a></li>
+              <li class="hover-list__item"><a class="hover-list__link" href="#">Мелорин</a></li>
             </ul>
           </li>
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">О Компании</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Доставка и оплата</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">О Компании</a></li>
         </ul>
 
-        <ul class="header-form">
-          <li>
-            <a href="#">Поиск</a>                    
-            <form action="#" method="get" hidden>
-              <input type="text" name="search" placeholder="Что ищем?">
+        <ul class="auth">
+          <li class="auth__item">
+            <a class="auth__link" href="#">Поиск</a>
+
+            <form class="search-form" action="#" method="get" hidden>
+              <input class="search-form__input" type="text" name="search" placeholder="Что ищем?">
             </form>
           </li>
-          <li>
-            <a href="#">Вход</a>            
-            <form action="#" method="post" hidden>
-              <input type="text" name="emil" placeholder="Электроная почта">
-              <input type="password" name="password" placeholder="Пароль">
-              <button type="submit">Войти</button>
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>          
+
+          <li class="auth__item">
+            <a class="auth__link" href="#">Вход</a>
+                        
+            <form class="enter-form" action="#" method="post" hidden>
+              <input class="enter-form__input" type="text" name="emil" placeholder="Электроная почта">
+              <input class="enter-form__input" type="password" name="password" placeholder="Пароль">
+              <button class="enter-form__button" type="submit">Войти</button>
+              <a class="enter-form__link" href="#">Забыли пароль?</a>
+              <a class="enter-form__link" href="#">Новая регистрация</a>          
             </form>
           </li>
-          <li>
-            <a href="#">Корзина</a>
+
+          <li class="auth__item">
+            <a class="auth__link" href="#">Пусто</a>
           </li>        
         </ul>               
       </nav>      
 
-      <p>С 10 до 20, ежедневно<br>
-      8 812 450-25-25</p>
+      <p class="header__info">С 10 до 20, ежедневно<br>
+      <span class="header__tel">8 812 450-25-25</span></p>
     </header>
 
     <main>
-      <h1>Glacy Shop</h1>
+      <h1 class="hidd-title">Glacy Shop</h1>
 
       <section class="promo">
-        <h2>Акция</h2>
+        <h2 class="hidd-title">Акция</h2>
 
-        <ul>
-          <li class="promo1">
-            <img src="img/promo1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">        
-            <h3>Крем-брюле и пломбир с малиновым джемом</h3>
-            <a href="#">Давайте оба!</a>
+        <ul class="promo__list">
+          <li class="promo__item promo__item1">
+            <!-- <img class="promo__img" src="img/promo1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом"> -->        
+            <h3 class="promo__title">Крем-брюле и пломбир с малиновым джемом</h3>
+            <a class="promo__link" href="#">Давайте оба!</a>
           </li>
-          <li class="promo2" hidden>
-            <img src="img/promo2.png" width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">        
-            <h3>Шоколадный пломбир и лимонный сорбет</h3>
-            <a href="#">Давайте оба!</a>
+          <li class="promo__item promo__item2" hidden>
+            <img class="promo__img" src="img/promo2.png" width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">        
+            <h3 class="promo__title">Шоколадный пломбир и лимонный сорбет</h3>
+            <a class="promo__link" href="#">Давайте оба!</a>
           </li>
-          <li class="promo3" hidden>
-            <img src="img/promo3.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет">        
-            <h3>Пломбир с помадкой и клубничный щербет</h3>
-            <a href="#">Давайте оба!</a>
+          <li class="promo__item promo__item3" hidden>
+            <img class="promo__img" src="img/promo3.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет">        
+            <h3 class="promo__title">Пломбир с помадкой и клубничный щербет</h3>
+            <a class="promo__link" href="#">Давайте оба!</a>
           </li>
         </ul>
 
         <ul class="promo-control">
-          <li><button type="button">1</button></li>
-          <li><button type="button">2</button></li>
-          <li><button type="button">3</button></li>
+          <li class="promo-control__item"><button class="promo-control__btn" type="button">1</button></li>
+          <li class="promo-control__item"><button class="promo-control__btn" type="button">2</button></li>
+          <li class="promo-control__item"><button class="promo-control__btn" type="button">3</button></li>
         </ul>
       </section>
 
       <section class="special">
-        <h2>Спецпредложения</h2>
+        <h2 class="hidd-title">Спецпредложения</h2>
 
-        <ul>
-          <li class="special-item">
-            <h3>Малинка даром!</h3>
+        <ul class="special__list">
+          <li class="special__item special__item_raspberries">
+            <h3 class="special__title">Малинка даром!</h3>
             <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
             <a href="#">Хочу варенье!</a>
           </li>
-          <li class="special-item">
-            <h3>Шоколадки даром!</h3>
+          <li class="special__item special__item_chocolate">
+            <h3 class="special__title">Шоколадки даром!</h3>
             <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
             <a href="#">Хочу шоколадки!</a>
           </li>
@@ -104,7 +108,7 @@
       </section>
 
       <section class="hits">
-        <h2>Хиты</h2>
+        <h2 class="hidd-title">Хиты</h2>
         <ul>
           <li class="hits-item">
             <img src="img/hit1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой начинкой">
@@ -130,8 +134,8 @@
       </section>
 
       <section class="advantage">
-        <h2>Преимущества</h2>
-        <p><b>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b></p>
+        <h2 class="hidd-title">Преимущества</h2>
+        <p class="advantage__title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
         <ul>
           <li class="advantage-item">
             <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
@@ -148,15 +152,15 @@
         </ul>        
       </section>
 
-      <article class="blog-item">
-        <h2>В блоге</h2>
+      <article class="blog">
+        <h2 class="hidd-title">В блоге</h2>
         <p>Новое в нашем блоге</p>
         <h3><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h3>
       </article>
 
       <section class="mailing">
-        <h2>Подписка</h2>
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+        <h2 class="hidd-title">Подписка</h2>
+        <p class="mailing__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 
         <form class="email" method="post" action="#">          
           <input type="text" name="email" placeholder="Электроная почта">
@@ -165,7 +169,7 @@
       </section>
 
       <section class="map">
-        <h2>Карта</h2>
+        <h2 class="hidd-title">Карта</h2>
         
         <img src="img/map.png" width="1200" height="430" alt="ул.Большая Конюшенная 19.8, Санкт-Петербург">        
 
@@ -181,7 +185,7 @@
       </section>      
     </main>
 
-    <footer class="page-footer">
+    <footer class="footer">
       <ul class="social">
         <li><a href="#">twitter</a></li>
         <li><a href="#">instagram</a></li>
@@ -201,7 +205,7 @@
         <img src="img/html.png" width="108" height="39" alt="HTML Academy">
         Сделано в HTML Academy 2019</a></p>
     </footer>
-    <div class="modal-feedback" hidden>
+    <div class="modal feedback" hidden>
       <p><b>Мы обязательно вам ответим!</b></p>
       <form class="feedback" method="post" action="#">        
         <input type="text" name="name" placeholder="Как вас зовут?">

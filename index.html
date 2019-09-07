@@ -10,12 +10,12 @@
   <body>
     <header class="header">
 
-      <nav class="nav">
+      <nav class="header-nav">
         <a class="logo"><img class="logo__img" src="img/logo.png" width="154" height="64" alt="GllasyShop"></a>
 
-        <ul class="menu">
-          <li class="menu__item">
-            <a class="menu__link" href="#">Каталог</a>
+        <ul class="header-menu">
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="#">Каталог</a>
             <ul class="hover-list" hidden>
               <li class="hover-list__item"><a class="hover-list__link" href="#">Новинки</a></li>
               <li class="hover-list__item"><a class="hover-list__link" href="catalog.html">Сливочное</a></li>
@@ -24,21 +24,21 @@
               <li class="hover-list__item"><a class="hover-list__link" href="#">Мелорин</a></li>
             </ul>
           </li>
-          <li class="menu__item"><a class="menu__link" href="#">Доставка и оплата</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">О Компании</a></li>
+          <li class="header-menu__item"><a class="header-menu__link" href="#">Доставка и оплата</a></li>
+          <li class="header-menu__item"><a class="header-menu__link" href="#">О Компании</a></li>
         </ul>
 
-        <ul class="auth">
-          <li class="auth__item">
-            <a class="auth__link" href="#">Поиск</a>
+        <ul class="header-auth">
+          <li class="header-auth__item">
+            <a class="header-auth__link" href="#">Поиск</a>
 
             <form class="search-form" action="#" method="get" hidden>
               <input class="search-form__input" type="text" name="search" placeholder="Что ищем?">
             </form>
           </li>
 
-          <li class="auth__item">
-            <a class="auth__link" href="#">Вход</a>
+          <li class="header-auth__item">
+            <a class="header-auth__link" href="#">Вход</a>
                         
             <form class="enter-form" action="#" method="post" hidden>
               <input class="enter-form__input" type="text" name="emil" placeholder="Электроная почта">
@@ -49,8 +49,8 @@
             </form>
           </li>
 
-          <li class="auth__item">
-            <a class="auth__link" href="#">Пусто</a>
+          <li class="header-auth__item">
+            <a class="header-auth__link" href="#">Пусто</a>
           </li>        
         </ul>               
       </nav>      
@@ -96,39 +96,39 @@
         <ul class="special__list">
           <li class="special__item special__item_raspberries">
             <h3 class="special__title">Малинка даром!</h3>
-            <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <a href="#">Хочу варенье!</a>
+            <p class="special__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+            <a class="special__link" href="#">Хочу варенье!</a>
           </li>
           <li class="special__item special__item_chocolate">
             <h3 class="special__title">Шоколадки даром!</h3>
-            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-            <a href="#">Хочу шоколадки!</a>
+            <p class="special__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+            <a class="special__link" href="#">Хочу шоколадки!</a>
           </li>
         </ul>        
       </section>
 
       <section class="hits">
         <h2 class="hidd-title">Хиты</h2>
-        <ul>
-          <li class="hits-item">
-            <img src="img/hit1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой начинкой">
-            <a href="#"><h3>Сливочное с апельсиновым джемом и цитрусовой начинкой</h3></a>
-            <p class="price">300 P <span>/кг</span></p>
+        <ul class="hits__list">
+          <li class="hits__item">
+            <img class="hits__img" src="img/hit1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой начинкой">
+            <a class="hits__link" href="#"><h3>Сливочное с апельсиновым джемом и цитрусовой начинкой</h3></a>
+            <p class="hits__text">300 P <span>/кг</span></p>
           </li>
-          <li class="hits-item">
-            <img src="img/hit2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-            <a href="#"><h3>Сливочно-кофейное с кусочками шоколада</h3></a>
-            <p class="price">300 P <span>/кг</span></p>
+          <li class="hits__item">
+            <img class="hits__img" src="img/hit2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            <a class="hits__link" href="#"><h3>Сливочно-кофейное с кусочками шоколада</h3></a>
+            <p class="hits__text">300 P <span>/кг</span></p>
           </li>
-          <li class="hits-item">
-            <img src="img/hit3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-            <a href="#"><h3>Сливочно-клубничное с присыпкой из белого шоколада</h3></a>
-            <p class="price">300 P <span>/кг</span></p>
+          <li class="hits__item">
+            <img class="hits__img" src="img/hit3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <a class="hits__link" href="#"><h3>Сливочно-клубничное с присыпкой из белого шоколада</h3></a>
+            <p class="hits__text">300 P <span>/кг</span></p>
           </li>
-          <li class="hits-item">
-            <img src="img/hit4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-            <a href="#"><h3>Сливочное крем-брюле с карамельной подливкой</h3></a>
-            <p class="price">300 P <span>/кг</span></p>
+          <li class="hits__item">
+            <img class="hits__img" src="img/hit4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+            <a class="hits__link" href="#"><h3>Сливочное крем-брюле с карамельной подливкой</h3></a>
+            <p class="hits__text">300 P <span>/кг</span></p>
           </li>
         </ul>        
       </section>
@@ -136,84 +136,91 @@
       <section class="advantage">
         <h2 class="hidd-title">Преимущества</h2>
         <p class="advantage__title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
-        <ul>
-          <li class="advantage-item">
-            <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+        <ul class="advantage__list">
+          <li class="advantage__item">
+            <p class="advantage__text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
           </li>
-          <li class="advantage-item">
-            <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+          <li class="advantage__item">
+            <p class="advantage__text">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
           </li>
-          <li class="advantage-item">
-            <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+          <li class="advantage__item">
+            <p class="advantage__text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
           </li>
-          <li class="advantage-item">
-            <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+          <li class="advantage__item">
+            <p class="advantage__text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
           </li>
         </ul>        
       </section>
 
       <article class="blog">
         <h2 class="hidd-title">В блоге</h2>
-        <p>Новое в нашем блоге</p>
-        <h3><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h3>
+        <p class="blog__subtitle">Новое в нашем блоге</p>
+        <h3 class="blog__title"><a class="blog__link" href="#">10 способов сервировки фруктовых щербетов к столу</a></h3>
       </article>
 
       <section class="mailing">
         <h2 class="hidd-title">Подписка</h2>
         <p class="mailing__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 
-        <form class="email" method="post" action="#">          
-          <input type="text" name="email" placeholder="Электроная почта">
-          <button type="submit">Отправить</button>
+        <form class="mailing-form" method="post" action="#">
+          <input class="mailing-form__input" type="text" name="email" placeholder="Электроная почта">
+          <button class="mailing-form__button" type="submit">Отправить</button>
         </form>        
       </section>
 
       <section class="map">
         <h2 class="hidd-title">Карта</h2>
         
-        <img src="img/map.png" width="1200" height="430" alt="ул.Большая Конюшенная 19.8, Санкт-Петербург">        
+        <img class="map__img" src="img/map.png" width="1200" height="430" alt="ул.Большая Конюшенная 19.8, Санкт-Петербург">        
 
-        <div class="contacts">
-          <p>Адрес главного офиса <br>
-          и офлайн-магазина:<br>
-          <b>ул.Большая Конюшенная 19.8, Санкт-Петербург</b></p>
-          <p>Для заказов по телефону:<br>
-            <b>8 812 450-25-25</b><br>
-          (c 10 до 20 ежедневно)</p>
-          <a href="">Форма обратной связи</a>                    
+        <div class="map-contacts">
+          <p class="map-contacts__text">
+            Адрес главного офиса <br>
+            и офлайн-магазина:<br>
+            ул.Большая Конюшенная 19.8, Санкт-Петербург
+          </p>
+
+          <p class="map-contacts__text">
+            Для заказов по телефону:<br>
+            8 812 450-25-25<br>
+            (c 10 до 20 ежедневно)
+          </p>
+
+          <a class="map-contacts__link" href="">Форма обратной связи</a>                    
         </div>        
       </section>      
     </main>
 
     <footer class="footer">
       <ul class="social">
-        <li><a href="#">twitter</a></li>
-        <li><a href="#">instagram</a></li>
-        <li><a href="#">facebook</a></li>
-        <li><a href="#">vk</a></li>
+        <li class="social__item"><a class="social__link" href="#">twitter</a></li>
+        <li class="social__item"><a class="social__link" href="#">instagram</a></li>
+        <li class="social__item"><a class="social__link" href="#">facebook</a></li>
+        <li class="social__item"><a class="social__link" href="#">vk</a></li>
       </ul>
 
       <ul class="footer-nav">
-        <li><a href="#">Для поставщиков</a></li>
-        <li><a href="#">Наши документы</a></li>
-        <li><a href="#">О производстве</a></li>
-        <li><a href="#">Экологические стандарты</a></li>   
+        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Для поставщиков</a></li>
+        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Наши документы</a></li>
+        <li class="footer-nav__item"><a class="footer-nav__link" href="#">О производстве</a></li>
+        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Экологические стандарты</a></li>   
       </ul>
 
-      <p class="copyright">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/html.png" width="108" height="39" alt="HTML Academy">
-        Сделано в HTML Academy 2019</a></p>
+      <div class="copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img class="copyright__img" src="img/html.png" width="108" height="39" alt="HTML Academy">
+          <p class="copyright__text">Сделано в HTML Academy 2019</p>
+        </a>
+      </div>
     </footer>
-    <div class="modal feedback" hidden>
-      <p><b>Мы обязательно вам ответим!</b></p>
-      <form class="feedback" method="post" action="#">        
-        <input type="text" name="name" placeholder="Как вас зовут?">
-        <input type="text" name="email" placeholder="Ваша почта для ответа?">
-        <textarea placeholder="Напишите что нибудь..." rows="5" cols="30"></textarea>
-        <button type="submit">Отправить</button>
-      </form>        
-      <p><b>Мы обязательно вам ответим!</b></p>
+    <div class="modal-feedback" hidden>
+      <p class="modal-feedback__text">Мы обязательно вам ответим!</p>
+      <form class="feedback-form" method="post" action="#">
+        <input class="feedback-form__input" type="text" name="name" placeholder="Как вас зовут?">
+        <input class="feedback-form__input" type="text" name="email" placeholder="Ваша почта для ответа?">
+        <textarea class="feedback-form__input" placeholder="Напишите что нибудь..." rows="5" cols="30"></textarea>
+        <button class="feedback-form__btn" type="submit">Отправить</button>
+      </form>      
     </div>      
   </body>
 </html>

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.css">        
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">   
   </head>
-  <body class="index">
+  <body>
     <header class="page-header">
 
       <nav class="header-nav">
@@ -72,9 +72,15 @@
 
       <section class="promo">
         <h2 class="hidd-title">Акция</h2>
+
+        <input class="promo__input" type="radio" id="btn-1" name="promo-btn" checked>
+        <input class="promo__input" type="radio" id="btn-2" name="promo-btn">
+        <input class="promo__input" type="radio" id="btn-3" name="promo-btn">
         
         <ul class="promo__list">
-          <li class="promo__item promo__item1">
+          <li class="promo__item promo__item1"> 
+            <div class="fon fon1"></div>
+            <div class="bg bg1"></div>           
             <!-- <img class="promo__img" src="img/promo1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">  -->       
             <h3 class="promo__title">
               Крем-брюле и пломбир с малиновым джемом
@@ -83,13 +89,17 @@
           </li>
 
           <li class="promo__item promo__item2" hidden>
-            <img class="promo__img" src="img/promo2.png" width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">        
+            <div class="fon fon2"></div>
+            <div class="bg bg2"></div>
+            <!-- <img class="promo__img" src="img/promo2.png" width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет"> -->        
             <h3 class="promo__title">Шоколадный пломбир и лимонный сорбет</h3>
             <a class="promo__link" href="#">Давайте оба!</a>
           </li>
 
           <li class="promo__item promo__item3" hidden>
-            <img class="promo__img" src="img/promo3.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет">        
+            <div class="fon fon3"></div>
+            <div class="bg bg3"></div>
+            <!-- <img class="promo__img" src="img/promo3.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет"> -->        
             <h3 class="promo__title">Пломбир с помадкой и клубничный щербет</h3>
             <a class="promo__link" href="#">Давайте оба!</a>
           </li>
@@ -97,15 +107,15 @@
 
         <ul class="promo-control">
           <li class="promo-control__item">
-            <button class="promo-control__btn promo-control__btn_active" type="button"></button>
+            <label class="promo-control__btn" for="btn-1"></label>
           </li>
 
           <li class="promo-control__item">
-            <button class="promo-control__btn" type="button"></button>
+            <label class="promo-control__btn" for="btn-2"></label>
           </li>
 
           <li class="promo-control__item">
-            <button class="promo-control__btn" type="button"></button>
+            <label class="promo-control__btn" for="btn-3"></label>
           </li>
         </ul>
       </section>

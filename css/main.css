@@ -57,31 +57,18 @@ BODY > * > * > * > * {
   overflow: hidden;
 }
 
-html {
-  background-color: #000;
-}
-
 body {
   font-family: roboto, "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 22px;
-  color: white;
-  background-color: #849d8f;  
-  max-width: 1200px;
-  min-width: 400px;
-  margin: auto;  
+  color: white;    
 }
 
 .index {
+  background-color: #849d8f;
   background-image: url(../img/promo1.png);
   background-repeat: no-repeat;
   background-position: center top;  
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 a {
@@ -112,6 +99,9 @@ a {
   display: flex;  
   flex-grow: 1;
   align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .header-menu__link {
@@ -147,7 +137,10 @@ a {
   flex-grow: 1;
   font-weight: 500;
   font-size: 14px;
-  align-items: center;  
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;  
 }
 
 .header-auth__link {
@@ -209,6 +202,12 @@ a {
 
 /*==========  PROMO  ==========*/
 
+.promo__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .promo__item {
   max-width: 670px;
   margin: 0 auto;  
@@ -249,8 +248,11 @@ a {
 
 .promo-control {
   display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   margin-left: 27px;
-  margin-top: -40px;  
+  margin-top: -40px;
 }
 
 .promo-control__btn {  

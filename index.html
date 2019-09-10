@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">   
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header container">
 
       <nav class="header-nav">
         <a class="logo">
@@ -70,7 +70,7 @@
     <main>
       <h1 class="hidd-title">Glacy Shop</h1>
 
-      <section class="promo">
+      <section class="promo container">
         <h2 class="hidd-title">Акция</h2>
 
         <input class="promo__input" type="radio" id="btn-1" name="promo-btn" checked>
@@ -78,8 +78,8 @@
         <input class="promo__input" type="radio" id="btn-3" name="promo-btn">
         
         <ul class="promo__list">
-          <li class="promo__item promo__item1"> 
-            <div class="fon fon1"></div>                    
+          <li class="promo__item promo__item1">
+            <div class="fon fon1"></div>              
             <img class="promo__img" src="img/promo1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">       
             <h3 class="promo__title">
               Крем-брюле и пломбир с малиновым джемом
@@ -117,7 +117,7 @@
         </ul>
       </section>
 
-      <section class="special">
+      <section class="special container">
         <h2 class="hidd-title">Спецпредложения</h2>
 
         <ul class="special__list">
@@ -139,7 +139,7 @@
         </ul>        
       </section>
 
-      <section class="hits">
+      <section class="hits container">
         <h2 class="hidd-title">Хиты</h2>
         <ul class="hits__list">
           <li class="hits__item">
@@ -184,7 +184,7 @@
         </ul>        
       </section>
 
-      <section class="advantage">
+      <section class="advantage container">
         <h2 class="hidd-title">Преимущества</h2>
         <p class="advantage__title">
           Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
@@ -217,27 +217,30 @@
         </ul>        
       </section>
 
-      <article class="blog">
-        <h2 class="hidd-title">В блоге</h2>
-        <p class="blog__subtitle">Новое в нашем блоге</p>
-        <h3 class="blog__title">
-          <a class="blog__link" href="#">
-            10 способов сервировки фруктовых щербетов к столу
-          </a>
-        </h3>
-      </article>
+      <div class="container">
+        <article class="blog">
+          <h2 class="hidd-title">В блоге</h2>
+          <p class="blog__subtitle">Новое в нашем блоге</p>
+          <h3 class="blog__title">
+            <a class="blog__link" href="#">
+              10 способов сервировки фруктовых щербетов к столу
+            </a>
+          </h3>
+        </article>
 
-      <section class="mailing">
-        <h2 class="hidd-title">Подписка</h2>
-        <p class="mailing__text">
-          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-        </p>
+        <section class="mailing">
+          <h2 class="hidd-title">Подписка</h2>
+          <p class="mailing__text">
+            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+          </p>
 
-        <form class="mailing-form" method="post" action="#">
-          <input class="mailing-form__input" type="text" name="email" placeholder="Электроная почта">
-          <button class="mailing-form__button" type="submit">Отправить</button>
-        </form>        
-      </section>
+          <form class="mailing-form" method="post" action="#">
+            <input class="mailing-form__input" type="text" name="email" placeholder="Электроная почта">
+            <button class="mailing-form__button" type="submit">Отправить</button>
+          </form>        
+        </section>
+      </div>
+      
 
       <section class="map">
         <h2 class="hidd-title">Карта</h2>
@@ -262,7 +265,7 @@
       </section>      
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <ul class="social">
         <li class="social__item">
           <a class="social__link" href="#">twitter</a>

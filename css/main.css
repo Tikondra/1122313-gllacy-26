@@ -62,20 +62,26 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: white;
-  background-color: #849d8f;    
+  background-color: #849d8f;
 }
 
 a {
   color: white;
 }
 
+.container {
+  max-width: 1200px;
+  padding-right: 27px;
+  padding-left: 27px;
+  margin-right: auto;
+  margin-left: auto;  
+}
+
 /*==========  HEADER  ==========*/
 
 .page-header {
   display: flex;
-  flex-direction: column;
-  margin-right: 27px;
-  margin-left: 27px;  
+  flex-direction: column;    
 }
 
 .header-nav {
@@ -262,8 +268,7 @@ a {
   display: flex;
   list-style: none;
   margin: 0;
-  padding: 0;
-  margin-left: 27px;
+  padding: 0;  
   margin-top: -40px;
 }
 
@@ -312,9 +317,7 @@ a {
 /*==========  SPECIAL  ==========*/
 
 .special {
-  margin-top: 60px;
-  margin-left: 27px;
-  margin-right: 27px;
+  margin-top: 60px;  
 }
 
 .special__list {
@@ -377,7 +380,7 @@ a {
 /*==========  HITS  ==========*/
 
 .hits {
-  margin: 40px 27px 0 27px;
+  margin-top: 40px;
 }
 
 .hits__list {
@@ -386,12 +389,17 @@ a {
   padding: 0;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
   position: relative;
 }
 
 .hits__item {
   max-width: 267px;
+}
+
+.hits__item + .hits__item {
+  margin-left: 10px;
 }
 
 .hits__link {

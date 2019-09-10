@@ -225,27 +225,10 @@ a {
   background-color: #9d8b84;  
 }
 
-.bg {
+.promo__img {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: center top;
   z-index: -1;
-}
-
-.bg1 {
-  background-image: url(../img/promo1.png);
-}
-
-.bg2 {
-  background-image: url(../img/promo2.png);
-}
-
-.bg3 {
-  background-image: url(../img/promo3.png);
 }
 
 .promo__title {
@@ -263,9 +246,7 @@ a {
   padding-top: 18px; 
   font-size: 32px;
   font-weight: 700;
-  text-decoration: none;
-
-  /* Style for "Подложка" */
+  text-decoration: none;  
 
   width: 280px;
   height: 64px;
@@ -321,10 +302,6 @@ a {
   display: flex; 
 }
 
-#btn-2:checked ~ .index1 {
-  
-}
-
 #btn-2:checked ~ .promo__list .promo__item1,
 #btn-3:checked ~ .promo__list .promo__item1 {
   display: none;  
@@ -336,30 +313,32 @@ a {
 
 /*==========  SPECIAL  ==========*/
 
-.special {
+.special__list {
+  display: flex;
+  list-style: none;
+  padding: 0;  
   margin-top: 60px;
-  margin-right: 27px;
-  margin-left: 27px;
+  margin-right: 14px;
+  margin-left: 14px;  
 }
 
-.special__list {
-  display: flex;  
+.special__item {  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 23px 20px;
+  border-radius: 15px;
+  background-position: center;
+
+  margin: 0 13px;
 }
 
 .special__item_raspberries {  
-  background-image: url(../img/raspberries.jpg);  
+  background-image: url(../img/raspberries.jpg);    
 }
 
 .special__item_chocolate {    
   background-image: url(../img/choko-fon.jpg);  
-}
-
-.special__item {
-  padding: 23px 20px;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;  
 }
 
 .special__title {

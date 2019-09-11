@@ -60,6 +60,7 @@ BODY > * > * > * > * {
 body {
   font-family: roboto, "Tahoma", sans-serif;
   font-size: 16px;
+  font-weight: 700;
   line-height: 22px;
   color: white;
   background-color: #849d8f;
@@ -519,9 +520,72 @@ a {
   margin-right: 33px;
 }
 
+/*==========  BLOG  ==========*/
 
+.blog-mail {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
 
-.map__img {
-  width: 100%;
-  height: 100%;
+.blog {
+  background-color: #ffffff;
+  background-image: url(../img/strawberry-fon.jpg);
+  background-repeat: no-repeat;
+  background-position: 16% 40%;
+  border-radius: 15px;
+  min-width: 560px;
+  min-height: 220px;
+  padding: 25px 250px 25px 20px;
+  margin-right: 26px;
+}
+
+.blog__subtitle {
+  color: #323232;
+  margin: 0;
+  font-weight: 500;
+}
+
+.blog__title {
+  margin: 0;
+}
+
+.blog__link {
+  color: #323232;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 0;
+}
+
+/*==========  MAIL  ==========*/
+
+.mailing {
+  min-width: 560px;
+  min-height: 220px;
+  background-color: #f8f7f4;  
+  border-radius: 15px;
+  padding: 27px 17px;
+  
+  border: 10px solid;
+  border-image: url(../img/border.png);
+  border-image-slice: 10;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mailing__text {
+  color: #5a5a5a;
+  font-weight: 400;
+  margin: 0;
+}
+
+.map {
+  margin-top: 40px;
+  width: 1200px;
+  
+  margin-right: auto;
+  margin-left: auto;
 }

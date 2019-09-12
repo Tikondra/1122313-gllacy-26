@@ -248,8 +248,12 @@
       <section class="map">
         <h2 class="hidd-title">Карта</h2>
         
-        <img class="map__img" src="img/map.png" width="1200" height="430" alt="ул.Большая Конюшенная 19.8, Санкт-Петербург">        
+        <!-- <img class="map__img" src="img/map.png" width="1200" height="430" alt="ул.Большая Конюшенная 19.8, Санкт-Петербург"> -->
+        
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6193902525217!2d30.321996900981375!3d59.93845759141016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1568268111423!5m2!1sru!2sru" width="1250" height="430" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
 
+        <div id="map" class="map-google"></div>
+        
         <div class="map-contacts">
           <p class="map-contacts__text">
             Адрес главного офиса <br>
@@ -316,6 +320,10 @@
         <textarea class="feedback-form__input" placeholder="Напишите что нибудь..." rows="5" cols="30"></textarea>
         <button class="feedback-form__btn" type="submit">Отправить</button>
       </form>      
-    </div>      
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+        
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDEFDHWeEdFUnwN5qqoweAa83JHwZOhkk&callback=initMap"></script>
   </body>
 </html>

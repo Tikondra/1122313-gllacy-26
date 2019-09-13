@@ -635,6 +635,10 @@ a {
 
 /*==========  MAP  ==========*/
 
+.map {
+  position: relative;
+}
+
 .map-google {
   margin-top: 40px;
   width: 1200px;
@@ -642,4 +646,46 @@ a {
   
   margin-right: auto;
   margin-left: auto;
+}
+
+.map-contacts {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+
+  position: absolute;
+  top: 80px;
+  right: 100px;
+  padding: 20px;
+
+  background-color: #ffffff;
+  border-radius: 15px;
+  color: #000;
+}
+
+.map-contacts__link {
+  color: #000;
+}
+
+/*==========  FOOTER  ==========*/
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.social {
+  display: flex;
+  list-style: none;
+}
+
+.social__item {
+  width: 70px;
+  height: 70px;
+}
+
+.social__item_tw {
+  background-image: url(../img/twitter.svg);
+  background-repeat: no-repeat;
 }

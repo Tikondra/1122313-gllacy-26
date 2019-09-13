@@ -41,7 +41,7 @@ BODY > * > * > * > * {
 } */
 /*==========  Custom  ==========*/
 
-.hidd-title:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
 
   width: 1px;
@@ -128,7 +128,8 @@ a {
   list-style: none;  
 }
 
-.header-menu__item:hover .dropdown {
+.header-menu__item:hover .dropdown,
+.header-menu__item:focus .dropdown {
   display: block;
 } 
 

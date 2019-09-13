@@ -49,7 +49,9 @@
             <a class="header-auth__link" href="#">Поиск</a>
 
             <form class="search-form" action="#" method="get" hidden>
-              <input class="search-form__input" type="text" name="search" placeholder="Что ищем?">
+              <label class="visually-hidden">Что ищем?
+                <input class="search-form__input" type="text" name="search" placeholder="Что ищем?">
+              </label>              
             </form>
           </li>
 
@@ -57,8 +59,14 @@
             <a class="header-auth__link" href="#">Вход</a>
 
             <form class="enter-form" action="#" method="post" hidden>
-              <input class="enter-form__input" type="text" name="emil" placeholder="Электроная почта">
-              <input class="enter-form__input" type="password" name="password" placeholder="Пароль">
+              <label class="visually-hidden">Ваша электронная почта
+                <input class="enter-form__input" type="text" name="emil" placeholder="Электроная почта">
+              </label>
+              
+              <label class="visually-hidden">Ваш пароль
+                <input class="enter-form__input" type="password" name="password" placeholder="Пароль">
+              </label>
+              
               <button class="enter-form__btn" type="submit">Войти</button>
               <a class="enter-form__link" href="#">Забыли пароль?</a>
               <a class="enter-form__link" href="#">Новая регистрация</a>          
@@ -69,17 +77,26 @@
             <a class="header-auth__link" href="#">Корзина</a>
             <div class="modal-basket" hidden>
               <table class="basket-table" border="1">
+
                 <tr class="basket-table__row table-row">
-                  <td class="table-row__item"><button class="table-row__btn" type="button">X</button></td>
-                  <td class="table-row__item"><img  class="table-row__img" src="img/mini1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+                  <td class="table-row__item">
+                    <button class="table-row__btn" type="button" arial-label="Удалить">X</button>
+                  </td>
+                  <td class="table-row__item">
+                    <img  class="table-row__img" src="img/mini1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                  </td>
                   <td class="table-row__item">Пломбир с апельсиновым джемом</td>
                   <td class="table-row__item">1,5 х 200 руб</td>
                   <td class="table-row__item">300 руб</td>
                 </tr>
 
                 <tr class="basket-table__row table-row">
-                  <td class="table-row__item"><button  class="table-row__btn" type="button">X</button></td>
-                  <td class="table-row__item"><img  class="table-row__img" src="img/mini2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                  <td class="table-row__item">
+                    <button  class="table-row__btn" type="button" arial-label="Удалить">X</button>
+                  </td>
+                  <td class="table-row__item">
+                    <img  class="table-row__img" src="img/mini2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                  </td>
                   <td class="table-row__item">Клубничный пломбир с присыпкой из белого шоколада</td>
                   <td class="table-row__item">1,5 х 300 руб</td>
                   <td class="table-row__item">450 руб</td>
@@ -104,16 +121,18 @@
         <li class="breadcrumbs__item">
           <a class="breadcrumbs__link" href="index.html">Главная</a>
         </li>
+
         <li class="breadcrumbs__item">
           <a class="breadcrumbs__link" href="#">Каталог</a>
         </li>
+
         <li class="breadcrumbs__item">Сливочное</li>
       </ul>      
 
       <h1 class="main-title">Сливочное мороженое</h1>
       
       <section class="filters">
-        <h2 class="hidd-title">Фильтры</h2>
+        <h2 class="visually-hidden">Фильтры</h2>
 
         <form class="filters-form" action="#" method="post">
           <div class="sort-view sort">
@@ -153,7 +172,7 @@
       </section>      
 
       <section class="catalog">
-        <h2 class="hidd-title">Каталог</h2>
+        <h2 class="visually-hidden">Каталог</h2>
         <ul class="catalog__list">
           <li class="catalog__item catalog-card">
             <img class="catalog-card__img" src="img/item1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -288,28 +307,64 @@
         </ul>
 
         <ul class="catalog-paginat">
-          <li class="catalog-paginat__item"><a class="catalog-paginat__link" href="#">1</a></li>
-          <li class="catalog-paginat__item"><a class="catalog-paginat__link" href="#">2</a></li>
-          <li class="catalog-paginat__item"><a class="catalog-paginat__link" href="#">3</a></li>
-          <li class="catalog-paginat__item"><a class="catalog-paginat__link" href="#">4</a></li>
-          <li class="catalog-paginat__item"><a class="catalog-paginat__link" href="#">5</a></li>
+          <li class="catalog-paginat__item">
+            <a class="catalog-paginat__link" href="#">1</a>
+          </li>
+
+          <li class="catalog-paginat__item">
+            <a class="catalog-paginat__link" href="#">2</a>
+          </li>
+
+          <li class="catalog-paginat__item">
+            <a class="catalog-paginat__link" href="#">3</a>
+          </li>
+
+          <li class="catalog-paginat__item">
+            <a class="catalog-paginat__link" href="#">4</a>
+          </li>
+
+          <li class="catalog-paginat__item">
+            <a class="catalog-paginat__link" href="#">5</a>
+          </li>
         </ul>
       </section>            
     </main>
 
     <footer class="page-footer">
       <ul class="social">
-        <li class="social__item"><a class="social__link" href="#">twitter</a></li>
-        <li class="social__item"><a class="social__link" href="#">instagram</a></li>
-        <li class="social__item"><a class="social__link" href="#">facebook</a></li>
-        <li class="social__item"><a class="social__link" href="#">vk</a></li>
+        <li class="social__item">
+          <a class="social__link" href="#">twitter</a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link" href="#">instagram</a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link" href="#">facebook</a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link" href="#">vk</a>
+        </li>
       </ul>
 
       <ul class="footer-nav">
-        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Для поставщиков</a></li>
-        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Наши документы</a></li>
-        <li class="footer-nav__item"><a class="footer-nav__link" href="#">О производстве</a></li>
-        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Экологические стандарты</a></li>   
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Для поставщиков</a>
+        </li>
+
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Наши документы</a>
+        </li>
+
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">О производстве</a>
+        </li>
+
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Экологические стандарты</a>
+        </li>   
       </ul>
 
       <div class="copyright">

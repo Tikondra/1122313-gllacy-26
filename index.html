@@ -40,8 +40,8 @@
           <li class="header-auth__item header-auth__item_search">
             <a class="header-auth__link header-auth__link_search" href="#">По</a>
 
-            <form class="search-form" action="#" method="get" hidden>
-              <input class="search-form__input" type="text" name="search" placeholder="Что ищем?">
+            <form class="search-form" action="#" method="get" hidden>              
+              <input class="search-form__input" type="text" name="search" placeholder="Что ищем?" arial-label="Поиск">                
             </form>
           </li>
 
@@ -49,8 +49,11 @@
             <a class="header-auth__link" href="#">Вход</a>
                         
             <form class="enter-form" action="#" method="post" hidden>
-              <input class="enter-form__input" type="text" name="emil" placeholder="Электроная почта">
-              <input class="enter-form__input" type="password" name="password" placeholder="Пароль">
+              
+              <input class="enter-form__input" type="text" name="email" placeholder="Электроная почта" arial-label="Электронная почта">
+
+              <input class="enter-form__input" type="password" name="password" placeholder="Пароль" arial-label="Ваш пароль">              
+
               <button class="enter-form__btn" type="submit">Войти</button>
               <a class="enter-form__link" href="#">Забыли пароль?</a>
               <a class="enter-form__link" href="#">Новая регистрация</a>
@@ -58,7 +61,7 @@
           </li>
 
           <li class="header-auth__item header-auth__item_basket">
-            <a class="header-auth__link" href="#">Пусто</a>
+            <a class="header-auth__link" href="#" arial-label="Корзина">Пусто</a>
           </li>        
         </ul>               
       </nav>      
@@ -68,10 +71,10 @@
     </header>
 
     <main>
-      <h1 class="hidd-title">Glacy Shop</h1>
+      <h1 class="visually-hidden">Glacy Shop</h1>
 
       <section class="promo container">
-        <h2 class="hidd-title">Акция</h2>
+        <h2 class="visually-hidden">Акция</h2>
 
         <input class="promo__input" type="radio" id="btn-1" name="promo-btn" checked>
         <input class="promo__input" type="radio" id="btn-2" name="promo-btn">
@@ -104,21 +107,21 @@
 
         <ul class="promo-control">
           <li class="promo-control__item">
-            <label class="promo-control__btn" for="btn-1"></label>
+            <label class="promo-control__btn" for="btn-1" arial-label="1"></label>
           </li>
 
           <li class="promo-control__item">
-            <label class="promo-control__btn" for="btn-2"></label>
+            <label class="promo-control__btn" for="btn-2"  arial-label="2"></label>
           </li>
 
           <li class="promo-control__item">
-            <label class="promo-control__btn" for="btn-3"></label>
+            <label class="promo-control__btn" for="btn-3"  arial-label="3"></label>
           </li>
         </ul>
       </section>
 
       <section class="special container">
-        <h2 class="hidd-title">Спецпредложения</h2>
+        <h2 class="visually-hidden">Спецпредложения</h2>
 
         <ul class="special__list">
           <li class="special__item special__item_raspberries">
@@ -140,7 +143,7 @@
       </section>
 
       <section class="hits container">
-        <h2 class="hidd-title">Хиты</h2>
+        <h2 class="visually-hidden">Хиты</h2>
         <ul class="hits__list">
           <li class="hits__item">
             <img class="hits__img" src="img/hit1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой начинкой">
@@ -187,7 +190,7 @@
 
       <section class="advantage container">
         <div class="advantage__fon">
-          <h2 class="hidd-title">Преимущества</h2>
+          <h2 class="visually-hidden">Преимущества</h2>
           <p class="advantage__title">
             Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
           </p>
@@ -222,7 +225,7 @@
 
       <div class="blog-mail container">
         <article class="blog">
-          <h2 class="hidd-title">В блоге</h2>
+          <h2 class="visually-hidden">В блоге</h2>
           <p class="blog__subtitle">Новое в нашем блоге</p>
           <h3 class="blog__title">
             <a class="blog__link" href="#">
@@ -232,13 +235,15 @@
         </article>
 
         <section class="mailing">
-          <h2 class="hidd-title">Подписка</h2>
+          <h2 class="visually-hidden">Подписка</h2>
           <p class="mailing__text">
             Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
           </p>
 
           <form class="mailing-form" method="post" action="#">
-            <input class="mailing-form__input" type="text" name="email" placeholder="Электроная почта">
+            
+            <input class="mailing-form__input" type="text" name="email" placeholder="Электроная почта"  arial-label="Электроная почта">
+            
             <button class="mailing-form__button" type="submit">Отправить</button>
           </form>        
         </section>
@@ -246,7 +251,7 @@
       
 
       <section class="map">
-        <h2 class="hidd-title">Карта</h2>
+        <h2 class="visually-hidden">Карта</h2>
         
         <!-- <img class="map__img" src="img/map.png" width="1200" height="430" alt="ул.Большая Конюшенная 19.8, Санкт-Петербург"> -->
         
@@ -267,7 +272,7 @@
             (c 10 до 20 ежедневно)
           </p>
 
-          <a class="map-contacts__link" href="">Форма обратной связи</a>                    
+          <a class="map-contacts__link" href="#">Форма обратной связи</a>                    
         </div>        
       </section>      
     </main>
@@ -275,16 +280,16 @@
     <footer class="page-footer container">
       <ul class="social">
         <li class="social__item social__item_tw">
-          <a class="social__link" href="#"></a>
+          <a class="social__link" href="#" arial-label="twitter"></a>
         </li>
         <li class="social__item social__item_inst">
-          <a class="social__link" href="#"></a>
+          <a class="social__link" href="#" arial-label="instagram"></a>
         </li>
         <li class="social__item social__item_fb">
-          <a class="social__link" href="#"></a>
+          <a class="social__link" href="#" arial-label="facebook"></a>
         </li>
         <li class="social__item social__item_vk">
-          <a class="social__link" href="#"></a>
+          <a class="social__link" href="#" arial-label="vk"></a>
         </li>
       </ul>
 
@@ -316,9 +321,13 @@
     <div class="modal-feedback" hidden>
       <p class="modal-feedback__text">Мы обязательно вам ответим!</p>
       <form class="feedback-form" method="post" action="#">
-        <input class="feedback-form__input" type="text" name="name" placeholder="Как вас зовут?">
-        <input class="feedback-form__input" type="text" name="email" placeholder="Ваша почта для ответа?">
-        <textarea class="feedback-form__input" placeholder="Напишите что нибудь..." rows="5" cols="30"></textarea>
+        
+        <input class="feedback-form__input" type="text" name="name" placeholder="Как вас зовут?" arial-label="Как вас зовут?">        
+        
+        <input class="feedback-form__input" type="text" name="email" placeholder="Ваша почта для ответа?" arial-label="Ваша почта">        
+        
+        <textarea class="feedback-form__input" placeholder="Напишите что нибудь..." rows="5" cols="30" arial-label="Напишите нам"></textarea>  
+        
         <button class="feedback-form__btn" type="submit">Отправить</button>
       </form>      
     </div>

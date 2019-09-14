@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">   
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header container">
 
       <nav class="header-nav">
         <a class="logo" href="index.html">
@@ -17,7 +17,7 @@
 
         <ul class="header-menu">
           <li class="header-menu__item">
-            <a class="header-menu__link" href="#">Каталог</a>
+            <a class="header-menu__link header-menu__link_catalog" href="#">Каталог</a>
             <ul class="dropdown" hidden>
               <li class="dropdown__item">
                 <a class="dropdown__link" href="#">Новинки</a>
@@ -45,27 +45,22 @@
         </ul>
 
         <ul class="header-auth">
-          <li class="header-auth__item">
-            <a class="header-auth__link" href="#">Поиск</a>
+          <li class="header-auth__item header-auth__item_search">
+            <a class="header-auth__link header-auth__link_search" href="#" title="Поиск" aria-label="Поиск"></a>
 
-            <form class="search-form" action="#" method="get" hidden>
-              <label class="visually-hidden">Что ищем?
-                <input class="search-form__input" type="text" name="search" placeholder="Что ищем?">
-              </label>              
+            <form class="search-form" action="#" method="get" hidden>              
+              <input class="search-form__input" type="text" name="search" placeholder="Что ищем?" aria-label="Поиск">                            
             </form>
           </li>
 
-          <li class="header-auth__item">
+          <li class="header-auth__item header-auth__item_enter">
             <a class="header-auth__link" href="#">Вход</a>
 
             <form class="enter-form" action="#" method="post" hidden>
-              <label class="visually-hidden">Ваша электронная почта
-                <input class="enter-form__input" type="text" name="emil" placeholder="Электроная почта">
-              </label>
-              
-              <label class="visually-hidden">Ваш пароль
-                <input class="enter-form__input" type="password" name="password" placeholder="Пароль">
-              </label>
+
+              <input class="enter-form__input" type="text" name="email" placeholder="Электроная почта" aria-label="Электронная почта">
+
+              <input class="enter-form__input" type="password" name="password" placeholder="Пароль" aria-label="Ваш пароль">
               
               <button class="enter-form__btn" type="submit">Войти</button>
               <a class="enter-form__link" href="#">Забыли пароль?</a>
@@ -73,14 +68,14 @@
             </form>
           </li>
 
-          <li class="header-auth__item">
-            <a class="header-auth__link" href="#">Корзина</a>
+          <li class="header-auth__item header-auth__item_basket-red">
+            <a class="header-auth__link header-auth__link_basket-red" href="#">2 товара</a>
             <div class="modal-basket" hidden>
               <table class="basket-table" border="1">
 
                 <tr class="basket-table__row table-row">
                   <td class="table-row__item">
-                    <button class="table-row__btn" type="button" arial-label="Удалить">X</button>
+                    <button class="table-row__btn" type="button" aria-label="Удалить">X</button>
                   </td>
                   <td class="table-row__item">
                     <img  class="table-row__img" src="img/mini1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
@@ -92,7 +87,7 @@
 
                 <tr class="basket-table__row table-row">
                   <td class="table-row__item">
-                    <button  class="table-row__btn" type="button" arial-label="Удалить">X</button>
+                    <button  class="table-row__btn" type="button" aria-label="Удалить">X</button>
                   </td>
                   <td class="table-row__item">
                     <img  class="table-row__img" src="img/mini2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
@@ -116,7 +111,7 @@
       <span class="page-header__tel">8 812 450-25-25</span></p>
     </header>
 
-    <main>
+    <main class="container">
       <ul class="breadcrumbs">
         <li class="breadcrumbs__item">
           <a class="breadcrumbs__link" href="index.html">Главная</a>
@@ -136,7 +131,11 @@
 
         <form class="filters-form" action="#" method="post">
           <div class="sort-view sort">
-            <label for="sort">Сортировка:</label>
+            
+            <p class="sort-view__title">
+              <label for="sort">Сортировка:</label>
+            <p>
+            
             <select name="sort" id="sort">
               <option>по популярности</option>
               <option>сначала недорогие</option>
@@ -146,8 +145,8 @@
           </div>
 
           <div class="sort-price sort">
-            <label>Цена: 
-            <input type="range" name="price" min="1" max="1000" step="1"></label>
+            <p class="sort-view__title"><label for="price">Цена: 100 руб. - 500 руб.</label></p>
+            <input type="range" name="price" id="price" min="1" max="1000" step="1">
           </div>
 
           <div class="sort-fat sort">
@@ -167,7 +166,7 @@
             <label><input type="checkbox" name="jams" value="jams">джемы</label>
           </div>
 
-          <button type="submit">Применить</button>
+          <button class="filters-form__button" type="submit">Применить</button>
         </form>
       </section>      
 
@@ -175,7 +174,7 @@
         <h2 class="visually-hidden">Каталог</h2>
         <ul class="catalog__list">
           <li class="catalog__item catalog-card">
-            <img class="catalog-card__img" src="img/item1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <img class="catalog-card__img" src="img/item4.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 
             <h3 class="catalog-card__title">
               <a class="catalog-card__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -186,7 +185,7 @@
 
 
           <li class="catalog__item catalog-card">
-            <img class="catalog-card__img" src="img/item2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            <img class="catalog-card__img" src="img/item7.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
 
             <h3 class="catalog-card__title">
               <a class="catalog-card__link" href="#">Сливочно-кофейное с кусочками шоколада</a>
@@ -197,7 +196,7 @@
 
 
           <li class="catalog__item catalog-card">
-            <img class="catalog-card__img" src="img/item3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <img class="catalog-card__img" src="img/item10.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 
             <h3 class="catalog-card__title">
               <a class="catalog-card__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
@@ -208,7 +207,7 @@
 
 
           <li class="catalog__item catalog-card">
-            <img class="catalog-card__img" src="img/item4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+            <img class="catalog-card__img" src="img/item1.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
 
             <h3 class="catalog-card__title">
               <a class="catalog-card__link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
@@ -219,7 +218,7 @@
 
 
           <li class="catalog__item catalog-card">
-            <img class="catalog-card__img" src="img/item5.png" width="267" height="267" alt="Сливочное с брусничным джемом">
+            <img class="catalog-card__img" src="img/item2.png" width="267" height="267" alt="Сливочное с брусничным джемом">
 
             <h3 class="catalog-card__title">
               <a class="catalog-card__link" href="#">Сливочное с брусничным джемом</a>
@@ -230,7 +229,7 @@
 
 
           <li class="catalog__item catalog-card">
-            <img class="catalog-card__img" src="img/item6.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
+            <img class="catalog-card__img" src="img/item5.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
 
             <h3 class="catalog-card__title">
               <a class="catalog-card__link" href="#">Сливочно-черничное с цельными ягодами черники</a>
@@ -241,7 +240,7 @@
 
 
           <li class="catalog__item catalog-card">
-            <img class="catalog-card__img" src="img/item7.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
+            <img class="catalog-card__img" src="img/item8.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
 
             <h3 class="catalog-card__title">
               <a class="catalog-card__link" href="#">Сливочно-лимонное с карамельной присыпкой</a>
@@ -252,7 +251,7 @@
 
 
           <li class="catalog__item catalog-card">
-            <img class="catalog-card__img" src="img/item8.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
+            <img class="catalog-card__img" src="img/item11.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
 
             <h3 class="catalog-card__title">
               <a class="catalog-card__link" href="#">Сливочное с шоколадной стружкой</a>
@@ -263,7 +262,7 @@
 
 
           <li class="catalog__item catalog-card">
-            <img class="catalog-card__img" src="img/item9.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
+            <img class="catalog-card__img" src="img/item3.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
 
             <h3 class="catalog-card__title">
               <a class="catalog-card__link" href="#">Сливочно-ванильное с кусочками шоколада</a>
@@ -274,7 +273,7 @@
 
 
           <li class="catalog__item catalog-card">
-            <img class="catalog-card__img" src="img/item10.png" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
+            <img class="catalog-card__img" src="img/item6.png" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
 
             <h3 class="catalog-card__title">
               <a class="catalog-card__link" href="#">Сливочноe с ментоловым сиропом</a>
@@ -285,7 +284,7 @@
 
 
           <li class="catalog__item catalog-card">
-            <img class="catalog-card__img" src="img/item11.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
+            <img class="catalog-card__img" src="img/item9.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
 
             <h3 class="catalog-card__title">
               <a class="catalog-card__link" href="#">Сливочное с кусочками черного шоколада</a>
@@ -330,22 +329,19 @@
       </section>            
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <ul class="social">
-        <li class="social__item">
-          <a class="social__link" href="#">twitter</a>
+        <li class="social__item social__item_tw">
+          <a class="social__link" href="#" target="_blank" aria-label="twitter" title="Мы в Твиттер"></a>
         </li>
-
-        <li class="social__item">
-          <a class="social__link" href="#">instagram</a>
+        <li class="social__item social__item_inst">
+          <a class="social__link" href="#" target="_blank" aria-label="instagram" title="Мы в Инстаграм"></a>
         </li>
-
-        <li class="social__item">
-          <a class="social__link" href="#">facebook</a>
+        <li class="social__item social__item_fb">
+          <a class="social__link" href="#" target="_blank" aria-label="facebook" title="Мы в Фейсбуке"></a>
         </li>
-
-        <li class="social__item">
-          <a class="social__link" href="#">vk</a>
+        <li class="social__item social__item_vk">
+          <a class="social__link" href="#" target="_blank" aria-label="vk" title="Мы во Вконтакте"></a>
         </li>
       </ul>
 
@@ -353,25 +349,26 @@
         <li class="footer-nav__item">
           <a class="footer-nav__link" href="#">Для поставщиков</a>
         </li>
-
         <li class="footer-nav__item">
           <a class="footer-nav__link" href="#">Наши документы</a>
         </li>
-
         <li class="footer-nav__item">
           <a class="footer-nav__link" href="#">О производстве</a>
         </li>
-
         <li class="footer-nav__item">
           <a class="footer-nav__link" href="#">Экологические стандарты</a>
         </li>   
       </ul>
 
-      <div class="copyright">
+      <div class="copyright">        
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img class="copyright__img" src="img/html.png" width="108" height="39" alt="HTML Academy">
-          <p class="copyright__text">Сделано в HTML Academy 2019</p>
+          <img class="copyright__img" src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">
         </a>
+        <p>
+          Сделано в 
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+          2019          
+        </p>
       </div>
     </footer>
   </body>

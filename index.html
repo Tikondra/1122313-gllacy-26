@@ -40,7 +40,7 @@
           <li class="header-auth__item header-auth__item_search">
             <a class="header-auth__link header-auth__link_search" href="#" title="Поиск" aria-label="Поиск"></a>
 
-            <form class="search-form" action="#" method="get" hidden>              
+            <form class="search-form" action="#" method="get">              
               <input class="search-form__input" type="text" name="search" placeholder="Что ищем?" aria-label="Поиск">                
             </form>
           </li>
@@ -290,33 +290,33 @@
       </ul>
 
       <ul class="footer-nav">
-        <li class="footer-nav__item">
+        <li class="footer-nav__item footer-nav__item_provider">
           <a class="footer-nav__link" href="#">Для поставщиков</a>
+        </li>
+        <li class="footer-nav__item footer-nav__item_info">
+          <a class="footer-nav__link" href="#">О производстве</a>
         </li>
         <li class="footer-nav__item">
           <a class="footer-nav__link" href="#">Наши документы</a>
-        </li>
-        <li class="footer-nav__item">
-          <a class="footer-nav__link" href="#">О производстве</a>
         </li>
         <li class="footer-nav__item">
           <a class="footer-nav__link" href="#">Экологические стандарты</a>
         </li>   
       </ul>
 
-      <div class="copyright">        
+      <div class="copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
             <img class="copyright__img" src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">
           </a>
-          <p>
+          <p class="copyright__text">
             Сделано в 
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-            2019          
+            © 2019          
           </p>
       </div>
     </footer>
 
-    <div class="modal-feedback" hidden>
+    <div class="modal-feedback">      
       <p class="modal-feedback__text">Мы обязательно вам ответим!</p>
       <form class="feedback-form" method="post" action="#">
         
@@ -324,10 +324,12 @@
         
         <input class="feedback-form__input" type="text" name="email" placeholder="Ваша почта для ответа?" aria-label="Ваша почта">        
         
-        <textarea class="feedback-form__input" placeholder="Напишите что нибудь..." rows="5" cols="30" aria-label="Напишите нам"></textarea>  
+        <textarea class="feedback-form__input feedback-form__area" placeholder="Напишите что нибудь..." rows="5" cols="30" aria-label="Напишите нам"></textarea>  
         
         <button class="feedback-form__btn" type="submit">Отправить</button>
-      </form>      
+
+        <button class="feedback-form__btn_close" type="button" aria-label="закрыть"></button>
+      </form>            
     </div>
 
     <script src="js/script.js"></script>

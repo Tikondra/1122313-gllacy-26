@@ -20,3 +20,24 @@ function initMap() {
     icon: imgpin
 });
 }
+
+var popup = document.querySelector('.modal-feedback');
+var openPopupButton = document.querySelector('.map-contacts__link');
+var closePopupButton = popup.querySelector('.feedback-form__btn_close')
+
+openPopupButton.addEventListener('click', function (evt) {
+
+    evt.preventDefault();
+    popup.classList.add('modal__show');
+});
+
+closePopupButton.addEventListener('click', function () {
+    popup.classList.remove('modal__show');
+});
+
+document.addEventListener('keydown', function (evt) {
+
+    if (evt.keyCode === 27) {
+        popup.classList.remove('modal__show');
+    }    
+});

@@ -17,12 +17,12 @@
 
         <ul class="header-menu">
           <li class="header-menu__item">
-            <a class="header-menu__link header-menu__link_catalog" href="#">Каталог</a>
+            <a class="header-menu__link header-menu__link_catalog active" href="#">Каталог</a>
             <ul class="dropdown" hidden>
               <li class="dropdown__item">
                 <a class="dropdown__link" href="#">Новинки</a>
               </li>
-              <li class="dropdown__item">
+              <li class="dropdown__item active">
                 <a class="dropdown__link" href="#">Сливочное</a>
               </li>
               <li class="dropdown__item">
@@ -46,7 +46,11 @@
 
         <ul class="header-auth">
           <li class="header-auth__item header-auth__item_search">
-            <a class="header-auth__link header-auth__link_search" href="#" title="Поиск" aria-label="Поиск"></a>
+            <a class="header-auth__link header-auth__link_search" href="#" title="Поиск" aria-label="Поиск">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+                <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
+              </svg>
+            </a>
 
             <form class="search-form" action="#" method="get" hidden>              
               <input class="search-form__input" type="text" name="search" placeholder="Что ищем?" aria-label="Поиск">                            

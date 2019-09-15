@@ -184,7 +184,7 @@ body.overlay:before {
 
 .header-auth__item {
   margin-right: 9px;
-  padding: 5px;
+  padding: 5px 0;
   background-color: rgba(255, 255, 255, 0.2);
   background-repeat: no-repeat;
 }
@@ -332,12 +332,16 @@ body.overlay:before {
   padding-right: 17px;
 }
 
-.header-auth__item_basket-red {  
-  padding-left: 44px;
-  padding-right: 17px;  
+.header-auth__item_basket-red {   
   background-image: url(../img/basket-red.svg);  
   background-position: 16px 6px; 
   border-radius: 30px; 
+}
+
+.header-auth__link_basket-red {
+  display: block;
+  padding-left: 44px;
+  padding-right: 17px; 
 }
 
 /*==========  HEADER-TEXT  ==========*/

@@ -18,12 +18,26 @@
         <ul class="header-menu">
           <li class="header-menu__item">
             <a class="header-menu__link header-menu__link_catalog" href="#">Каталог</a>
-            <ul class="dropdown" hidden>
-              <li class="dropdown__item"><a class="dropdown__link" href="#">Новинки</a></li>
-              <li class="dropdown__item"><a class="dropdown__link" href="catalog.html">Сливочное</a></li>
-              <li class="dropdown__item"><a class="dropdown__link" href="#">Щербеты</a></li>
-              <li class="dropdown__item"><a class="dropdown__link" href="#">Фруктовый лед</a></li>
-              <li class="dropdown__item"><a class="dropdown__link" href="#">Мелорин</a></li>
+            <ul class="dropdown">
+              <li class="dropdown__item">
+                <a class="dropdown__link dropdown__link_news" href="#">Новинки</a>
+              </li>
+              <li><hr class="hr"></li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="catalog.html">Сливочное</a>
+              </li>
+
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">Щербеты</a>
+              </li>
+
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">Фруктовый лед</a>
+              </li>
+
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">Мелорин</a>
+              </li>
             </ul>
           </li>
 
@@ -46,22 +60,32 @@
           </li>
 
           <li class="header-auth__item header-auth__item_enter">
-            <a class="header-auth__link" href="#">Вход</a>
+
+            <a class="header-auth__link header-auth__link_enter" href="#">Вход</a>
                         
-            <form class="enter-form" action="#" method="post" hidden>
-              
-              <input class="enter-form__input" type="text" name="email" placeholder="Электроная почта" aria-label="Электронная почта">
+            <form class="enter-form" action="#" method="post">
 
-              <input class="enter-form__input" type="password" name="password" placeholder="Пароль" aria-label="Ваш пароль">              
+              <div class="enter-form__box">
 
-              <button class="enter-form__btn" type="submit">Войти</button>
-              <a class="enter-form__link" href="#">Забыли пароль?</a>
-              <a class="enter-form__link" href="#">Новая регистрация</a>
+                <input class="enter-form__input" type="text" name="email" placeholder="Электроная почта" aria-label="Электронная почта">
+
+                <input class="enter-form__input" type="password" name="password" placeholder="Пароль" aria-label="Ваш пароль">              
+
+                <button class="enter-form__btn" type="submit">Войти</button>
+
+                <div class="enter-form__link-list">
+
+                  <a class="enter-form__link" href="#">Забыли пароль?</a>
+                  <a class="enter-form__link" href="#">Новая регистрация</a>
+
+                </div>
+
+              </div>
             </form>
           </li>
 
           <li class="header-auth__item header-auth__item_basket">
-            <a class="header-auth__link" href="#" aria-label="Корзина">Пусто</a>
+            <a class="header-auth__link header-auth__link_basket" href="#" aria-label="Корзина">Пусто</a>
           </li>        
         </ul>               
       </nav>      

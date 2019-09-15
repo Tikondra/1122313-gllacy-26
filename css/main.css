@@ -72,6 +72,22 @@ body.overlay:before {
   z-index: 100;
 }
 
+.btn {
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  
+}
+
 /*==========  HEADER  ==========*/
 
 .page-header {
@@ -407,19 +423,11 @@ body.overlay:before {
 }
 
 .promo__link {
-  display: block;
-  text-align: center;
+  display: block;  
   padding: 18px 0; 
   font-size: 32px;
-  font-weight: 700;
-  text-decoration: none;  
-
   width: 280px;
-  height: 64px;
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-  background-color: #ffffff;
-  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
-  border-radius: 30px;
+  height: 64px;  
 }
 
 .promo__input {
@@ -522,20 +530,10 @@ body.overlay:before {
 }
 
 .special__link {
-  align-self: flex-end;
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 30px;  
-  padding: 10px 0;    
-
-  
+  align-self: flex-end;  
+  padding: 10px 0;  
   width: 165px;
   height: 46px;
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-  background-color: #ffffff;
-  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
   opacity: 0.99;
 }
 
@@ -775,23 +773,12 @@ body.overlay:before {
   outline: none;
 }  
 
-.mailing-form__button {
-  font-size: 18px;
-  font-weight: 700;
-  color: #ffffff;
-  text-align: center;
-  
-  border: none;
-  border-radius: 30px;  
+.mailing-form__button {  
+  border: none;    
   padding: 10px 0;
-  margin-left: 11px;    
-
-  
+  margin-left: 11px;  
   width: 129px;
   height: 44px;
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-  background-color: #e84d37;
-  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
 }
 
 /*==========  MAP  ==========*/
@@ -841,16 +828,9 @@ body.overlay:before {
 }
 
 .map-contacts__link {
-  display: block;
-  color: #fff;
+  display: block;  
   width: 252px;
   height: 44px;
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-  background-color: #e84d37;
-  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
-  border-radius: 30px;
-  text-align: center;
-  text-decoration: none;
   padding: 10px 28px;
 }
 

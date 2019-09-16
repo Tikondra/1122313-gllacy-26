@@ -49,43 +49,4 @@ function feedback() {
     });
 };
 
-function search() {
-    var popupSearch = document.querySelector('.search-form');
-    var openPopupButton = document.querySelector('.header-auth__link_search');
-
-    openPopupButton.addEventListener('click', function (evt) {
-
-        evt.preventDefault();
-        popupSearch.classList.add('search-form_show');        
-    });
-
-    document.addEventListener('keydown', function (evt) {
-
-        if (evt.keyCode === 27) {
-            popupSearch.classList.remove('search-form_show');            
-        }    
-    });
-}
-
-function enter() {
-    var popup = document.querySelector('.enter-form');
-    var openPopupButton = document.querySelector('.header-auth__link_enter');
-
-    openPopupButton.addEventListener('click', function (evt) {
-
-        evt.preventDefault();
-        popup.classList.add('enter-form_show');        
-    });
-
-    document.addEventListener('keydown', function (evt) {
-
-        if (evt.keyCode === 27) {
-            popup.classList.remove('enter-form_show');            
-        }    
-    });
-}
-
-
 feedback();
-search();
-enter();

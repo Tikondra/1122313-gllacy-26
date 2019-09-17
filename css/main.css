@@ -128,9 +128,9 @@ body.overlay:before {
   margin-bottom: -10px;
 }
 
-.logo__img {  
-  margin-top: 9px;
-  margin-right: 9px;  
+.logo {  
+  margin-right: 9px;
+  padding-top: 9px;  
 }
 
 /*==========  HEADER-MENU  ==========*/
@@ -157,9 +157,23 @@ body.overlay:before {
   text-decoration: none;
 }
 
-.header-menu__link {    
-  font-weight: 700;    
-  padding: 5px 13px 6px 13px;  
+.header-menu__link {       
+  padding: 5px 13px;
+  text-decoration: none;
+  position: relative;    
+}
+
+.header-menu__link::after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  bottom: 6px;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  opacity: 0.2;
+  padding: 0 13px;
+  background-clip: content-box;     
 }
 
 .header-menu__link:active {
@@ -469,6 +483,7 @@ th, td {
   font-weight: 700;  
   text-align: right;
   margin-top: 0;
+  width: 250px;
 }
 
 .page-header__tel {
@@ -485,7 +500,7 @@ th, td {
   padding: 0;
 }
 
-.fon {
+.background {
   position: fixed;
   top: 0;
   left: 0;
@@ -494,15 +509,15 @@ th, td {
   z-index: -1;
 }
 
-.fon1 {
+.background1 {
   background-color: #849d8f;
 }
 
-.fon2 {
+.background2 {
   background-color: #8996a6;  
 }
 
-.fon3 {
+.background3 {
   background-color: #9d8b84;  
 }
 
@@ -512,8 +527,7 @@ th, td {
   z-index: -1;
 }
 
-.promo__title {
-  font-weight: 700;
+.promo__title {  
   font-size: 60px;
   line-height: 60.35px;
   text-align: center;
@@ -522,9 +536,10 @@ th, td {
 }
 
 .promo__link {    
-  padding: 21px 0; 
+  padding: 10px 0; 
   font-size: 32px;
-  width: 280px;    
+  width: 280px;
+  line-height: 44px;    
 }
 
 .promo__input {
@@ -951,6 +966,7 @@ input-placeholder {
   list-style: none;
   margin: 0;
   padding: 0;
+  max-width: 300px;
 }
 
 .social__item {

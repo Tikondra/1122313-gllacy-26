@@ -72,6 +72,18 @@ body.overlay:before {
   z-index: 100;
 }
 
+.hits__link:hover,
+.footer-nav__link:hover,
+.copyright__link:hover,
+.hits__link:focus,
+.footer-nav__link:focus,
+.copyright__link:focus,
+.hits__link:active,
+.footer-nav__link:active,
+.copyright__link:active {
+  color: #ffbc9e;
+}
+
 .btn {
   font-size: 18px;
   font-weight: 700;
@@ -79,9 +91,24 @@ body.overlay:before {
   color: #ffffff;
   text-decoration: none;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
   background-color: #e74a35;
   background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);  
   border-radius: 30px;
+  outline: none;  
+}
+
+.btn:hover {
+  box-shadow: 0 2px 2px #ac1000;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-blend-mode: overlay;
+}
+
+.btn:active {
+  box-shadow: inset 0 2px 2px #942718;
+  background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
+  background-color: rgba(0, 0, 0, 0.07);
+  background-blend-mode: overlay;
 }
 
 /*==========  HEADER  ==========*/
@@ -118,7 +145,8 @@ body.overlay:before {
   padding: 15px 0;    
 }
 
-.header-menu__item:hover .header-menu__link{  
+.header-menu__item:hover .header-menu__link,
+.header-menu__link:focus {  
   color: #323232;
   background-color: #f7f6f3;
   border-radius: 30px;
@@ -127,6 +155,11 @@ body.overlay:before {
 .header-menu__link {    
   font-weight: 700;    
   padding: 5px 15px 10px 15px;  
+}
+
+.header-menu__link.active {
+  background-color: #d07058;
+  border-radius: 30px;
 }
 
 /*==========  HEADER-MENU__DROPDOWN  ==========*/
@@ -146,9 +179,14 @@ body.overlay:before {
   border-radius: 5px; 
 }
 
-.header-menu__item:hover .dropdown {
+.header-menu__item:hover .dropdown,
+.header-menu__link:focus ~ .dropdown {
   display: block;
-} 
+}
+
+.header-menu .header-menu__item:focus-within > .dropdown {
+  display: block;
+}
 
 .dropdown__link {
   display: block;
@@ -205,16 +243,13 @@ body.overlay:before {
   list-style: none;    
 }
 
-.header-auth__item {
-  height: 32px;
-  margin-right: 9px;
-  padding: 0;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 30px;          
+.header-auth__item {  
+  position: relative;
+  padding: 15px 0;          
 }
 
-.header-auth__item:last-child {
-  margin-right: 0;
+.header-auth__item + .header-auth__item {
+  margin-left: 9px;
 }
 
 .header-auth__link {
@@ -223,7 +258,9 @@ body.overlay:before {
   height: 32px;
   padding: 0 15px;
   align-items: center;
-  text-decoration: none;      
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;      
 }
 
 .header-auth__span {
@@ -234,18 +271,15 @@ body.overlay:before {
   display: block;
 }
 
-.header-auth__item_search:hover,
-.header-auth__item_enter:hover {
-  background-color: #f8f7f4;  
+.header-auth__item_search:hover .header-auth__link,
+.header-auth__item_enter:hover .header-auth__link{
+  background-color: #f8f7f4;
+  color: #323232;
+  border-radius: 30px;  
 }
 
-.header-auth__link_search:hover,
-.header-auth__link_enter:hover {
-  color: #323232;  
-}
-
-.header-auth__link_search:hover path,
-.header-auth__link_enter:hover path {
+.header-auth__item_search:hover path,
+.header-auth__item_enter:hover path {
   fill: #000;
 }
 
@@ -263,8 +297,8 @@ body.overlay:before {
 .search-form {
   display: none;
   position: absolute;
-  right: 430px;
-  top: 60px;
+  right: 0;
+  top: 52px;
   padding: 20px 15px;
   width: 341px;
   height: 84px;
@@ -289,8 +323,8 @@ body.overlay:before {
 .enter-form {
   display: none;
   position: absolute;
-  top: 60px;
-  right: 325px;
+  top: 52px;
+  right: 0px;
 
   width: 280px;
   
@@ -433,6 +467,10 @@ body.overlay:before {
   border-radius: 50%;    
   cursor: pointer;
   background-color: transparent;  
+}
+
+.promo-control__btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 #btn-1:checked ~ .promo-control label[for="btn-1"],
@@ -698,6 +736,12 @@ body.overlay:before {
   margin: 0;
 }
 
+.blog__link:hover,
+.blog__link:focus,
+.blog__link:active {
+  color: #e84d37;
+}
+
 /*==========  MAIL  ==========*/
 
 .mailing {
@@ -741,13 +785,7 @@ body.overlay:before {
 input-placeholder {
   color: #999999; opacity:1;
   opacity:0;
-}
-
-.mailing-form__input:focus,
-.mailing-form__button:focus {  
-  box-shadow: 0 0 3pt 1px #999999;
-  outline: none;
-}  
+} 
 
 .mailing-form__button {  
   border: none;    
@@ -952,18 +990,10 @@ input-placeholder {
 
 .feedback-form__btn {
   align-self: flex-end;
-  color: #ffffff;
-
-  font-size: 18px;
-  font-weight: 700;
   line-height: 24px;
-
   width: 139px;
-  height: 44px;
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-  background-color: #e84d37;
-  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
-  border-radius: 30px;
+  height: 44px;  
+  background-color: #e84d37;  
   border: none;
 }
 

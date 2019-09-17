@@ -124,14 +124,13 @@ body.overlay:before {
 }
 
 .header-nav {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex;  
   margin-bottom: -10px;
 }
 
 .logo__img {  
   margin-top: 9px;
-  margin-right: 10px;  
+  margin-right: 9px;  
 }
 
 /*==========  HEADER-MENU  ==========*/
@@ -155,11 +154,17 @@ body.overlay:before {
   color: #323232;
   background-color: #f7f6f3;
   border-radius: 30px;
+  text-decoration: none;
 }
 
 .header-menu__link {    
   font-weight: 700;    
-  padding: 5px 15px 10px 15px;  
+  padding: 5px 13px 6px 13px;  
+}
+
+.header-menu__link:active {
+  box-shadow: inset 0 2px 1px #696969;
+  background-color: #f8f7f4;
 }
 
 .header-menu__link.active {
@@ -172,8 +177,8 @@ body.overlay:before {
 .dropdown {
   display: none;
   position: absolute;
-  top: 52px;
-  left: 1px;
+  top: 50px;
+  left: 0;
   
   width: 150px;
   margin: 0;
@@ -655,8 +660,7 @@ body.overlay:before {
   margin: 0;
   font-size: 24px;
   font-weight: 500;
-  line-height: 30px;
-  margin-bottom: 10px;
+  line-height: 30px;  
 }
 
 .advantage__list {
@@ -671,14 +675,14 @@ body.overlay:before {
 .advantage__item {
   width: 532px;
   padding-left: 55px;
-
+  font-weight: 400;
   position: relative;
 }
 
 .advantage__item::after {
   content: "";
   position: absolute;
-  top: 0px;
+  top: 10px;
   left: 0px;
   z-index: 1;
 

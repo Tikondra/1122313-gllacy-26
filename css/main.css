@@ -163,7 +163,7 @@ body.overlay:before {
   position: relative;    
 }
 
-.header-menu__link::after {
+.header-menu__link:not(.active)::after {
   position: absolute;
   content: '';
   height: 1px;
@@ -1119,14 +1119,26 @@ input-placeholder {
   margin: 0;
   padding: 0;
   margin-top: -30px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
 }
 
-.breadcrumbs__item:not(:last-child)::after {
-  content: '»'
+.breadcrumbs__link {
+  text-decoration: none;
+  border-bottom: 1px solid rgb(100%, 100%, 100%, 0.2);
 }
 
-.breadcrumbs__item + .breadcrumbs__item {
-  margin-left: 10px;
+.breadcrumbs__item::after {
+  content: '»';
+  padding: 0 5px;
+}
+
+.catalog-title {
+  margin: 5px 0;
+  font-size: 35px;  
+  line-height: 41px;
 }
 
 /*==========  FILTERS  ==========*/

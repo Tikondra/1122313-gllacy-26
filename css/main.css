@@ -161,7 +161,7 @@ body.overlay:before {
 }
 
 .header-menu__link {       
-  padding: 5px 13px;
+  padding: 5px 13px 5px 14px;
   text-decoration: none;
   position: relative;    
 }
@@ -277,14 +277,14 @@ body.overlay:before {
 }
 
 .header-auth__item + .header-auth__item {
-  margin-left: 9px;
+  margin-left: 10px;
 }
 
 .header-auth__link {
   display: flex;
   justify-content: center;  
   height: 32px;
-  padding: 0 15px;
+  padding: 0 16px 0 18px;
   align-items: center;
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
@@ -292,7 +292,7 @@ body.overlay:before {
 }
 
 .header-auth__span {
-  margin-left: 5px;
+  margin-left: 6px;
 }
 
 .header-auth__item:hover form,
@@ -607,7 +607,7 @@ th, td {
 /*==========  SPECIAL  ==========*/
 
 .special {
-  margin-top: 60px;  
+  margin-top: 55px;  
 }
 
 .special__list {
@@ -626,7 +626,7 @@ th, td {
   max-width: 560px;
   background-position: left top;  
   border-radius: 15px;  
-  padding: 23px 20px;        
+  padding: 23px 20px 23px 17px;        
 }
 
 .special__item_raspberries {  
@@ -642,6 +642,7 @@ th, td {
   font-size: 35px;
   font-weight: 700;
   margin: 0;
+  margin-bottom: -17px;
 }
 
 .special__text {
@@ -711,8 +712,8 @@ th, td {
 
 .catalog-card__price {
   position: absolute;
-  top: 165px;
-  left: 0;  
+  top: 161px;
+  left: 2px;  
 
   font-weight: 700;
   font-size: 45px;
@@ -763,20 +764,20 @@ th, td {
 
 .advantage {  
   color: #323232;  
-  margin-top: 30px;
 }
 
 .advantage__fon {
   background-image: url(../img/wafer.jpg);
   border-radius: 15px;
-  padding: 30px 20px 0 20px;
+  padding: 24px 20px 0 20px;
 }
 
 .advantage__title {
   margin: 0;
   font-size: 24px;
   font-weight: 500;
-  line-height: 30px;  
+  line-height: 30px;
+  margin-bottom: 6px;  
 }
 
 .advantage__list {
@@ -798,7 +799,7 @@ th, td {
 .advantage__item::after {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 3px;
   left: 0px;
   z-index: 1;
 
@@ -824,9 +825,18 @@ th, td {
   background-image: url("../img/thermometer.svg");  
 }
 
-.advantage__item_ice,
-.advantage__item_eco {
+.advantage__item:nth-child(2n+1) {
   margin-right: 33px;
+}
+
+.advantage__item_ice,
+.advantage__item_cow {
+  margin-bottom: -10px;
+}
+
+.advantage__item_eco,
+.advantage__item_temp {
+  margin-bottom: 8px;
 }
 
 /*==========  BLOG  ==========*/
@@ -981,7 +991,7 @@ input-placeholder {
 .page-footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 22px;
   margin-bottom: 25px;
   align-items: center;
 }
@@ -1009,7 +1019,7 @@ input-placeholder {
 }
 
 .social__item + .social__item {
-  margin-left: 10px;
+  margin-left: 11px;
 }
 
 .social__link {
@@ -1060,11 +1070,12 @@ input-placeholder {
 }
 
 .copyright {
-  width: 195px;
+  width: 205px;
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
-  margin: 0;
+  margin: -6px -17px 0 0;
+      
 }
 
 .copyright__text {

@@ -19,12 +19,12 @@
           <li class="header-menu__item">
             <a class="header-menu__link header-menu__link_catalog active" href="#">Каталог</a>
             <ul class="dropdown">
-              <li class="dropdown__item">
+              <li class="dropdown__item dropdown__item_news">
                 <a class="dropdown__link dropdown__link_news" href="#">Новинки</a>
               </li>
-              <li><hr class="hr"></li>
+              
               <li class="dropdown__item active">
-                <a class="dropdown__link" href="#">Сливочное</a>
+                <a class="dropdown__link">Сливочное</a>
               </li>
               <li class="dropdown__item">
                 <a class="dropdown__link" href="#">Щербеты</a>
@@ -176,23 +176,36 @@
 
             <ul class="sort-fat__list">
               <li class="sort-fat__item">
-                <input class="sort-fat__input" type="radio" name="fat" value="0%" id="radio1">
-                <label class="sort-fat__label" for="radio1">0%</label>                
+                <input class="sort-fat__input" type="radio" name="fat" value="0%" id="radio1" disabled>
+
+                <label class="sort-fat__label" for="radio1">
+                  <span class="sort-fat__btn"></span>
+                  <span class="sort-fat__text">0%</span>
+                </label>                
               </li>
 
               <li class="sort-fat__item">
                 <input class="sort-fat__input" type="radio" name="fat" value="до 10%" id="radio2" checked>
-                <label class="sort-fat__label" for="radio2">до 10%</label>                
+                <label class="sort-fat__label" for="radio2">
+                  <span class="sort-fat__btn"></span>
+                  <span class="sort-fat__text">до 10%</span>
+                </label>                
               </li>
 
               <li class="sort-fat__item">
                 <input class="sort-fat__input" type="radio" name="fat" value="до 30%" id="radio3">
-                <label class="sort-fat__label" for="radio3">до 30%</label>                
+                <label class="sort-fat__label" for="radio3">
+                  <span class="sort-fat__btn"></span>
+                  <span class="sort-fat__text">до 30%</span>
+                </label>                
               </li>
 
               <li class="sort-fat__item">
                 <input class="sort-fat__input" type="radio" name="fat" value="выше 30%" id="radio4">
-                <label class="sort-fat__label" for="radio4">выше 30%</label>                
+                <label class="sort-fat__label" for="radio4">
+                  <span class="sort-fat__btn"></span>
+                  <span class="sort-fat__text">выше 30%</span>
+                </label>                
               </li>
             </ul>            
           </div>
@@ -202,27 +215,42 @@
             <ul class="sort-fill__list">
               <li class="sort-fill__item">
                 <input class="sort-fill__input" type="checkbox" name="choko" value="choko" id="check1" checked>
-                <label class="sort-fill__label" for="check1">шоколадные</label>                
+                <label class="sort-fill__label" for="check1">
+                  <span class="sort-fill__btn"></span>
+                  <span class="sort-fill__text">шоколадные</span>
+                </label>                
               </li>
 
               <li class="sort-fill__item">
                 <input class="sort-fill__input" type="checkbox" name="sugar" value="sugar" id="check2" checked>
-                <label class="sort-fill__label" for="check2">сахарные присыпки</label>              
+                <label class="sort-fill__label" for="check2">
+                  <span class="sort-fill__btn"></span>
+                  <span class="sort-fill__text">сахарные присыпки</span>
+                </label>              
               </li>
 
               <li class="sort-fill__item">
-                <input class="sort-fill__input" type="checkbox" name="fruits" value="fruits" id="check3">
-                <label class="sort-fill__label" for="check3">фрукты</label>              
+                <input class="sort-fill__input" type="checkbox" name="fruits" value="fruits" id="check3" disabled>
+                <label class="sort-fill__label" for="check3">
+                  <span class="sort-fill__btn"></span>
+                  <span class="sort-fill__text">фрукты</span>
+                </label>              
               </li>
 
               <li class="sort-fill__item">
                 <input class="sort-fill__input" type="checkbox" name="syrups" value="syrups" id="check4">
-                <label class="sort-fill__label" for="check4">сиропы</label>              
+                <label class="sort-fill__label" for="check4">
+                  <span class="sort-fill__btn"></span>
+                  <span class="sort-fill__text">сиропы</span>
+                </label>              
               </li>
 
               <li class="sort-fill__item">
                 <input class="sort-fill__input" type="checkbox" name="jams" value="jams" id="check5">
-                <label class="sort-fill__label" for="check5">джемы</label>              
+                <label class="sort-fill__label" for="check5">
+                  <span class="sort-fill__btn"></span>
+                  <span class="sort-fill__text">джемы</span>
+                </label>              
               </li>
             </ul>            
           </div>

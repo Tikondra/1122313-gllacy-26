@@ -1108,6 +1108,7 @@ input-placeholder {
 }
 
 .footer-nav__item {
+  min-width: 163px;  
 }
 
 .footer-nav__link {

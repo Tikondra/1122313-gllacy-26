@@ -675,13 +675,13 @@ th, td {
 /*==========  SPECIAL  ==========*/
 
 .special {
-  margin-top: 55px;  
+  margin-top: 41px;  
 }
 
 .special__list {
   display: flex;
-  justify-content: space-around;  
-  padding: 0 ;
+  justify-content: space-between;  
+  padding: 0;
   margin: 0;
   list-style: none;
 }
@@ -689,17 +689,17 @@ th, td {
 .special__item {  
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 230px;
+  
+  min-height: 229px;
   width: 560px;
-  padding: 23px 20px 23px 17px;
+  padding: 23px 21px 23px 18px;
 
   background-position: left top;  
   border-radius: 15px;          
 }
 
 .special__item_raspberries {  
-  margin-right: 26px;
+  margin-right: 10px;
   background-image: url(../img/raspberries.jpg);    
 }
 
@@ -709,19 +709,37 @@ th, td {
 
 .special__title {
   margin: 0;
-  margin-bottom: -17px;
+  margin-bottom: 26px;
+
   font-size: 35px;
   font-weight: 700;  
 }
 
 .special__text {
+  margin: 0;  
+  margin-left: 1px;
+
   font-size: 18px;
-  font-weight: 700;  
+  font-weight: 700;
 }
 
-.special__link {
-  align-self: flex-end;  
-  padding: 12px 23px;    
+.special__link_raspberries {
+  align-self: flex-end;
+  width: 165px;
+  height: 46px;  
+  padding: 9px 23px 12px 22px;
+  margin-top: auto;
+  line-height: 24px;
+}
+
+.special__link_chocolate {
+  align-self: flex-end;
+  width: 189px;
+  height: 45px;  
+  padding: 9px 22px 12px 21px;
+  margin-top: auto;
+  margin-bottom: 1px;
+  line-height: 24px;
 }
 
 /*==========  HITS  ==========*/

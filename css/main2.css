@@ -23,10 +23,10 @@
 
 
 
-BODY > * > * > * {
+/* BODY > * > * > * {
     outline: 2px dotted dodgerblue;
     outline-offset: -4px;
-}
+} */
 
 /* BODY > * > * > * > * {
     outline: 2px dotted orange;
@@ -149,15 +149,17 @@ body.overlay:before {
 
 .page-header__info {
   align-self: flex-end;  
-  margin-top: 0;
+  margin: 0;
+  margin-top: -6px;
 
-  font-size: 14px;    
+  font-size: 14px;
+  line-height: 16px;
   text-align: right;  
 }
 
-.page-header__tel {
+.page-header__tel {  
   font-size: 22px;
-  line-height: 24px;  
+  line-height: 30px;  
 }
 
 .logo {  

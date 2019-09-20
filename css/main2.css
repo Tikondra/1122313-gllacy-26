@@ -21,9 +21,16 @@
   src: url("../fonts/robotomedium.woff2") format("woff2");
   font-weight: 500; }
 
+/* BODY > * {
+    outline: 2px solid deeppink;
+} */
 
+/* BODY > * > * {
+    outline: 2px dashed lime;
+    outline-offset: -2px;
+}
 
-/* BODY > * > * > * {
+BODY > * > * > * {
     outline: 2px dotted dodgerblue;
     outline-offset: -4px;
 } */
@@ -32,6 +39,7 @@
     outline: 2px dotted orange;
     outline-offset: -4px;
 } */
+
 /*==========  GLOBAL  ==========*/
 
 .visually-hidden:not(:focus):not(:active) {
@@ -140,7 +148,7 @@ body.overlay:before {
 
 .page-header {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
 }
 
 .header-nav {  
@@ -541,10 +549,72 @@ th, td {
 /*==========  MAIN  ==========*/
 /*==========  PROMO  ==========*/
 
-.promo__list {  
+.promo {
+  display: flex;
+  margin-top: 272px;  
+}
+
+.promo-control {
+  align-self: flex-end;
+  display: flex;  
+  margin: 0;
+  margin-right: 159px;
+  padding: 0;
+  list-style: none;
+}
+
+.promo-control__btn {
+  display: block;
+  width: 21px;
+  height: 21px;
+  margin: 0;
+  margin-right: 8px;
+  margin-bottom: 22px;
+  
+  border: 2px solid white;
+  border-radius: 50%;    
+  cursor: pointer;
+  background-color: transparent;  
+}
+
+.promo-control__item:last-child .promo-control__btn{
+  margin-right: 0;
+}
+
+.promo__list {
+  order: 1;
+  
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.promo__item {  
+  flex-direction: column;
+  align-items: center;
+  width: 670px;    
+}
+
+.promo__item1 {
+  display: flex;  
+}
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 32px;
+
+  font-size: 60px;  
+  line-height: 60.35px;
+  text-align: center;      
+}
+
+.promo__link {
+  width: 280px;
+  height: 64px;
+  padding: 8px 0 12px;
+
+  font-size: 32px;  
+  line-height: 44px;    
 }
 
 .background {
@@ -574,46 +644,8 @@ th, td {
   z-index: -1;
 }
 
-.promo__title {
-  margin-top: 260px;
-  margin-bottom: 30px;
-
-  font-size: 60px;
-  line-height: 60.35px;
-  text-align: center;    
-}
-
-.promo__link {
-  width: 280px;
-  padding: 10px 0;
-
-  font-size: 32px;  
-  line-height: 44px;    
-}
-
 .promo__input {
   display: none;
-}
-
-.promo-control {
-  display: flex;
-  margin: 0;
-  padding: 0;  
-  margin-top: -40px;
-  list-style: none;  
-}
-
-.promo-control__btn {
-  display: inline-block;
-  width: 21px;
-  height: 21px;
-  margin: 0;
-  margin-right: 8px;
-  
-  border: 2px solid white;
-  border-radius: 50%;    
-  cursor: pointer;
-  background-color: transparent;  
 }
 
 .promo-control__btn:hover,
@@ -625,18 +657,6 @@ th, td {
 #btn-2:checked ~ .promo-control label[for="btn-2"],
 #btn-3:checked ~ .promo-control label[for="btn-3"] {
   background-color: #ffffff;
-}
-
-.promo__item {
-  flex-direction: column;
-  width: 670px;
-  margin: 0 auto;
-  
-  align-items: center;  
-}
-
-.promo__item1 {
-  display: flex;  
 }
 
 #btn-2:checked ~ .promo__list .promo__item2 {

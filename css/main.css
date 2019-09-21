@@ -51,7 +51,6 @@ body {
 
 a {
   color: #ffffff;
-  /* outline: none; */
 }
 
 .container {
@@ -123,6 +122,38 @@ body.overlay:before {
   background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
   background-color: rgba(0, 0, 0, 0.07);
   background-blend-mode: overlay;
+}
+
+::-webkit-input-placeholder {
+  color: #999999;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+::-moz-placeholder          {
+  color: #999999;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}/* Firefox 19+ */
+:-moz-placeholder           {
+  color: #999999;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}/* Firefox 18- */
+:-ms-input-placeholder      {
+  color: #999999;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+input {
+  color: #323232;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
 }
 
 /*==========  HEADER  ==========*/
@@ -391,11 +422,6 @@ body.overlay:before {
 .enter-form__input {
   width: 100%;
   padding: 8px 13px 10px;
-
-  color: #999999;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
 
   border: 1px solid #d3d3d2;
   border-radius: 5px;
@@ -705,7 +731,7 @@ td:nth-child(5) {
 .special__text {
   margin: 0;
   margin-left: 1px;
-
+  margin-bottom: 10px;
   font-size: 18px;
   font-weight: 700;
 }
@@ -713,8 +739,7 @@ td:nth-child(5) {
 .special__link_raspberries {
   align-self: flex-end;
   width: 165px;
-  height: 46px;
-  padding: 9px 23px 12px 22px;
+  padding: 10px 20px;
   margin-top: auto;
   line-height: 24px;
 }
@@ -722,8 +747,7 @@ td:nth-child(5) {
 .special__link_chocolate {
   align-self: flex-end;
   width: 189px;
-  height: 45px;
-  padding: 9px 22px 12px 21px;
+  padding: 10px 19px;
   margin-top: auto;
   margin-bottom: 1px;
   line-height: 24px;
@@ -805,16 +829,15 @@ td:nth-child(5) {
 
 .catalog-card__btn {
   position: absolute;
-  top: 330px;
+  bottom: 0;
+  left: 46px;
   z-index: 2;
 
-  display: none;
   width: 200px;
   margin-bottom: 20px;
   padding: 13px 0;
 }
 
-.catalog-card:hover .catalog-card__btn,
 .catalog-card:hover .catalog-card__hover {
   display: block;
 }
@@ -845,11 +868,11 @@ td:nth-child(5) {
 
 .advantage {
   color: #323232;
-  margin-top: 42px;
+  margin-top: 2px;
 }
 
 .advantage__fon {
-  padding: 24px 20px 0 20px;
+  padding: 24px 20px 7px 20px;
   background-image: url(../img/wafer.jpg);
   border-radius: 15px;
 }
@@ -997,17 +1020,11 @@ td:nth-child(5) {
 .mailing-form__input {
   flex-grow: 1;
   padding: 10px 0 10px 15px;
-
-  font-weight: 400;
-  line-height: 24px;
+  margin-top: 10px;
 
   background: #ffffff;
   border: 1px solid rgba(178, 178, 178, 0.52);
   border-radius: 8px;
-}
-
-input-placeholder {
-  color: #999999;
 }
 
 .mailing-form__button {
@@ -1026,7 +1043,7 @@ input-placeholder {
 
 .map-google,
 .map {
-  width: 1200px;
+  min-width: 1200px;
   height: 430px;
   margin-right: auto;
   margin-left: auto;
@@ -1034,8 +1051,8 @@ input-placeholder {
 
 .map-contacts {
   position: absolute;
-  top: 55px;
-  right: 45px;
+  top: 5%;
+  right: 5%;
 
   display: flex;
   flex-direction: column;
@@ -1335,13 +1352,14 @@ input-placeholder {
   opacity: 0.3;
 }
 
-.catalog-paginat__arrow_right,
-.catalog-paginat__arrow_left {
-  display: inline-block;
+.catalog-paginat__arrow_left,
+.catalog-paginat__arrow_right {
   width: 8px;
   height: 12px;
   background-image: url(../img/icon-right-small.svg);
   background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
   opacity: 0.2
 }
 
@@ -1354,7 +1372,8 @@ input-placeholder {
   background-image: url(../img/icon-left-small.svg);
 }
 
-.catalog-paginat__item_arrow {
+.catalog-paginat__arrow_left,
+.catalog-paginat__arrow_right {
   margin: 0 15px;
 }
 
@@ -1364,7 +1383,6 @@ input-placeholder {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  width: 870px;
 }
 
 .sort__title {
@@ -1481,6 +1499,7 @@ input-placeholder {
 .filters-form__btn {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0 15px 0 17px;
   min-height: 37px;
@@ -1528,9 +1547,12 @@ input-placeholder {
 }
 
 .sort-fill__btn {
-  background-image: url(../img/checkbox-off.svg);
-  width: 20px;
+  width: 24px;
   height: 20px;
+
+  background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .sort-fat__text,
@@ -1566,6 +1588,7 @@ input-placeholder {
   display: block;
   align-self: flex-end;
   padding: 7.5px 27.5px;
+  margin-top: 10px;
 
   color: #fff;
   font-weight: 500;

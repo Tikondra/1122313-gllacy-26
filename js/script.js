@@ -10,12 +10,12 @@ function initMap() {
         zoom: 16
     });
 
-    var imgpin = 'img/pin.svg'  
+    var imgpin = 'img/pin.svg'
     var marker = new google.maps.Marker({
-    
+
         position: {lat: 59.938495, lng: 30.322907},
-        
-        map: map,    
+
+        map: map,
         title: 'Gllacy Shop',
         icon: imgpin
     });
@@ -45,7 +45,7 @@ function feedback() {
         if (evt.keyCode === 27) {
             popupFeedback.classList.remove('modal__show');
             overlay.classList.remove('overlay');
-        }    
+        }
     });
 };
 

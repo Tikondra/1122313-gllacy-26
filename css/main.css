@@ -1385,6 +1385,49 @@ input-placeholder {
   width: 220px;
 }
 
+.sort-price__range {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 37px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sort-price__range::after {
+  content: '';
+  position: absolute;
+  bottom: 16px;
+  left: 22px;
+
+  height: 4px;
+  width: 176px;
+
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.sort-price__btn {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url("../img/filter-button.svg");
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.sort-price__btn:hover {
+  cursor: pointer;
+}
+
+.sort-price__btn1 {
+  margin-left: 14px;
+}
+
+.sort-price__btn2 {
+  margin-left: auto;
+  margin-right: 14px;
+}
 /*==========  FILTERS__SORT-VIEW  ==========*/
 
 .sort-view {

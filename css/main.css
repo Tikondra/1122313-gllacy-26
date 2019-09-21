@@ -1164,7 +1164,22 @@ input-placeholder {
 }
 
 .footer-nav__link {
+  position: relative;
   text-decoration: none;
+}
+
+.footer-nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  height: 1px;
+  width: 100%;
+
+  background-color: #fff;
+  background-clip: content-box;
+  opacity: 0.2;
 }
 
 .footer-nav__item:nth-child(2n+1) {

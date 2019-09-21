@@ -731,7 +731,8 @@ td:nth-child(5) {
 
 /*==========  HITS  ==========*/
 
-.hits {
+.hits,
+.catalog {
   margin-top: 41px;
 }
 
@@ -746,10 +747,6 @@ td:nth-child(5) {
   list-style: none;
 }
 
-.catalog__list {
-  margin-top: 41px;
-}
-
 .catalog-card {
   position: relative;
   display: flex;
@@ -757,7 +754,7 @@ td:nth-child(5) {
   align-items: center;
   width: 267px;
 
-  margin-bottom: -15px;
+  margin-bottom: 26px;
 }
 
 .catalog-card {
@@ -1272,7 +1269,7 @@ input-placeholder {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-top: -32px;
+  margin-top: -20px;
 
   font-size: 14px;
   font-weight: 400;
@@ -1302,7 +1299,7 @@ input-placeholder {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: 87px 0 30px;
+  margin: 46px 0 30px;
   padding: 0;
   list-style: none;
 }

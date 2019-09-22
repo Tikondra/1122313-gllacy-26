@@ -884,12 +884,13 @@ td:nth-child(5) {
   margin-bottom: 26px;
 }
 
-.hits__item {
-  margin-bottom: 24px;
-}
-
 .catalog-card {
   margin-right: 26px;
+  margin-bottom: 23px;
+}
+
+.hits__item {
+  margin-bottom: 24px;
 }
 
 .catalog-card:nth-child(4n) {
@@ -911,7 +912,7 @@ td:nth-child(5) {
 }
 
 .catalog-card__title {
-  padding: 0 5px;
+  padding: 0 6px;
   margin-top: 11px;
   text-align: center;
   font-size: 16px;
@@ -1176,7 +1177,7 @@ td:nth-child(5) {
 .map-google,
 .map {
   min-width: 1200px;
-  height: 430px;
+  height: 429px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1234,7 +1235,7 @@ td:nth-child(5) {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 22px;
+  margin-top: 17px;
   margin-bottom: 25px;
 }
 
@@ -1243,6 +1244,7 @@ td:nth-child(5) {
   margin: 0;
   margin-right: 214px;
   margin-left: 1px;
+  margin-top: 9px;
   padding: 0;
 
   display: -webkit-box;
@@ -1260,6 +1262,7 @@ td:nth-child(5) {
 .footer-nav {
   width: 326px;
   margin: 0;
+  margin-top: 11px;
   padding: 0;
 
   display: -webkit-box;
@@ -1279,6 +1282,7 @@ td:nth-child(5) {
 
 .copyright {
   margin-left: auto;
+  margin-right: -3px;
 
   font-size: 12px;
   font-weight: 400;
@@ -1329,10 +1333,11 @@ td:nth-child(5) {
 
 .footer-nav__item {
   min-width: 163px;
+  margin-bottom: 5px;
 }
 
 .footer-nav__link {
-  position: relative;
+  position: relative;  
   text-decoration: none;
 }
 
@@ -1358,6 +1363,7 @@ td:nth-child(5) {
   font-weight: 700;
   background-image: url(../img/heart.svg);
   background-repeat: no-repeat;
+  background-position: left center;
 }
 
 .copyright__text {
@@ -1551,6 +1557,10 @@ td:nth-child(5) {
   margin: 0 15px;
 }
 
+.catalog-paginat__arrow_right {
+  margin-right: -3px;
+}
+
 /*==========  FILTERS  ==========*/
 
 .filters-form {
@@ -1698,7 +1708,7 @@ td:nth-child(5) {
 }
 
 .sort-fill__list {
-  padding: 0 23px 0 15px;
+  padding: 0 23px 0 16px;
 }
 
 .sort-fat__item + .sort-fat__item {
@@ -1706,7 +1716,7 @@ td:nth-child(5) {
 }
 
 .sort-fill__item + .sort-fill__item {
-  margin-left: 20px;
+  margin-left: 21px;
 }
 
 .sort-fat__input,
@@ -1751,11 +1761,11 @@ td:nth-child(5) {
 .sort-fill__text {
   font-weight: 500;
   line-height: 18px;
-  padding-left: 9px;
+  padding-left: 10px;
 }
 
 .sort-fill__text {
-  padding-left: 12px;
+  padding-left: 7px;
 }
 
 .sort-fat__input:checked ~ label .sort-fat__btn {

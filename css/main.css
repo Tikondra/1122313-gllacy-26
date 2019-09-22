@@ -1543,6 +1543,10 @@ td:nth-child(5) {
   opacity: 0.2
 }
 
+.catalog-paginat__arrow_right {
+  opacity: 1;
+}
+
 .catalog-paginat__arrow_right:hover,
 .catalog-paginat__arrow_left:hover {
   opacity: 1;

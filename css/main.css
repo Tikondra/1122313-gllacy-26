@@ -63,7 +63,7 @@ a {
   padding-left: 27px;
 }
 
-body.overlay:before {
+body.overlay::before {
   content: '';
 
   position: fixed;
@@ -114,6 +114,7 @@ body.overlay:before {
 
   text-decoration: none;
   outline: none;
+  cursor: pointer;
 }
 
 .btn:hover,
@@ -722,7 +723,9 @@ td:nth-child(5) {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 670px;
+  width: 671px;
+
+  position: relative;
 }
 
 .promo__item1 {
@@ -771,7 +774,8 @@ td:nth-child(5) {
 
 .promo__img {
   position: absolute;
-  top: 0;
+  top: -390px;
+  left: -187px;
   z-index: -1;
 }
 
@@ -810,7 +814,7 @@ td:nth-child(5) {
 /*==========  SPECIAL  ==========*/
 
 .special {
-  margin-top: 41px;
+  margin-top: 40px;
 }
 
 .special__list {
@@ -891,7 +895,7 @@ td:nth-child(5) {
 
 .hits,
 .catalog {
-  margin-top: 41px;
+  margin-top: 40px;
 }
 
 .hits__list,
@@ -957,16 +961,25 @@ td:nth-child(5) {
 .catalog-card__title {
   width: 100%;
   padding: 0 6px;
-  margin-top: 11px;
+  margin-top: 12px;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
 }
 
+.catalog-card__link {
+  text-decoration: none;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.2) inset;
+}
+
+.catalog-card__link:hover {
+  box-shadow: 0 -1px 0 #ffbc9e inset;
+}
+
 .catalog-card__price {
   position: absolute;
-  top: 161px;
+  top: 163px;
   left: -2px;
 
   font-weight: 700;
@@ -1039,6 +1052,7 @@ td:nth-child(5) {
   font-weight: 500;
   line-height: 30px;
   letter-spacing: 0.2px;
+   
 }
 
 .advantage__list {
@@ -1214,14 +1228,13 @@ td:nth-child(5) {
 .mailing-form__button {
   width: 129px;
   padding: 0;
-  margin-left: 11px;  
+  margin-left: 9px;  
   border: none;
 }
 
 /*==========  MAP  ==========*/
 
-.map {
-  position: relative;
+.map {  
   margin-top: 40px;
 }
 
@@ -1237,10 +1250,16 @@ td:nth-child(5) {
   background-position: center;
 }
 
+.map-cont {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .map-contacts {
   position: absolute;
-  top: 14%;
-  right: 10%;
+  top: -470px;
+  right: 28px;
 
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1883,12 +1902,8 @@ select::-ms-expand {
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
    /* СТИЛИ ДЛЯ ПРОКЛЯТОГО ИЕ!!! ЧТО Б ОН ПРОВАЛИЛСЯ!!! */
 
-    .promo__img {      
-      left: 258px;      
-    }
-
-    .sort-fill__list,
-    .sort-fat__list {
-      padding-top: 9px;
-    }    
+  .sort-fill__list,
+  .sort-fat__list {
+    padding-top: 9px;
+  }    
 }

@@ -838,7 +838,7 @@ td:nth-child(5) {
   width: 560px;
   padding: 23px 21px 25px 18px;
 
-  background-position: left top;
+  background-position: -50px -95px;
   border-radius: 15px;
 }
 

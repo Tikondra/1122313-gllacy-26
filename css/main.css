@@ -705,11 +705,7 @@ td:nth-child(5) {
   margin-right: 0;
 }
 
-.promo__list {
-  -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 1;
-  order: 1;
-
+.promo__list {    
   margin: 0;
   padding: 0;
   list-style: none;
@@ -780,7 +776,10 @@ td:nth-child(5) {
 }
 
 .promo__input {
-  display: none;
+position: absolute;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
 }
 
 .promo-control__btn:hover,
@@ -849,10 +848,12 @@ td:nth-child(5) {
 .special__item_raspberries {
   margin-right: 10px;
   background-image: url(../img/raspberries.jpg);
+  background-color: #9d0021;
 }
 
 .special__item_chocolate {
   background-image: url(../img/choko-fon.jpg);
+  background-color: #502d1e;
 }
 
 .special__title {
@@ -1042,6 +1043,7 @@ td:nth-child(5) {
   padding: 24px 20px 0px 20px;
   background-image: url(../img/wafer.jpg);
   border-radius: 15px;
+  background-color: #eee6d3;
 }
 
 .advantage__title {

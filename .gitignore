@@ -12,3 +12,4 @@ Thumbs.db
 .bowerrc
 *.json
 gulpfile.js
+dist/

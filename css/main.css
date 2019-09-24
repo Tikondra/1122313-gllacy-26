@@ -776,10 +776,7 @@ td:nth-child(5) {
 }
 
 .promo__input {
-position: absolute;
--webkit-appearance: none;
--moz-appearance: none;
-appearance: none;
+  display: none;
 }
 
 .promo-control__btn:hover,
@@ -1781,14 +1778,11 @@ select::-ms-expand {
 .filters-form__btn {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  display: flex;  
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0 15px 0 17px;
+  padding: 7px 15px 0 17px;
   min-height: 37px;
 
   list-style: none;
@@ -1797,7 +1791,7 @@ select::-ms-expand {
 }
 
 .sort-fill__list {
-  padding: 0 23px 0 16px;
+  padding: 8px 23px 0 16px;
 }
 
 .sort-fat__item + .sort-fat__item {
@@ -1899,13 +1893,4 @@ select::-ms-expand {
   box-shadow: inset 0 2px 1px #696969;
   background-color: #ededed;
   border: none;
-}
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
-   /* СТИЛИ ДЛЯ ПРОКЛЯТОГО ИЕ!!! ЧТО Б ОН ПРОВАЛИЛСЯ!!! */
-
-  .sort-fill__list,
-  .sort-fat__list {
-    padding-top: 9px;
-  }    
 }

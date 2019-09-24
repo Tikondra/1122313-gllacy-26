@@ -492,6 +492,11 @@ input {
   fill: #000;
 }
 
+.header-auth__link:focus:not(.header-auth__item_basket-red) g,
+.header-auth__link:focus:not(.header-auth__item_basket-red) path {
+  fill: #000;
+}
+
 /*==========  HEADER-AUTH__SEARCH-FORM  ==========*/
 
 .search-form {
@@ -1103,7 +1108,8 @@ td:nth-child(5) {
 }
 
 .advantage__item:nth-child(2n+1) {
-  margin-right: 31px;
+  width: 545px;
+  margin-right: 21px;
 }
 
 .advantage__item_ice,
@@ -1450,14 +1456,16 @@ td:nth-child(5) {
 /*==========  MODAL-FEEDBACK  ==========*/
 
 .modal-feedback {
-  position: absolute;
-  top: 1850px;
-  right: 35%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
   z-index: 101;
 
   display: none;
   width: 480px;
   padding: 25px;
+  margin-left: -240px;
+  margin-top: -239px;
 
   background-color: #f8f7f4;
   border-radius: 10px;

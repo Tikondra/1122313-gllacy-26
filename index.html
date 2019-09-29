@@ -58,7 +58,7 @@
               </svg>
             </a>
 
-            <form class="search-form" action="#" method="get">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
               <input class="search-form__input" type="text" name="search" placeholder="Что ищем?" aria-label="Поиск">
             </form>
           </li>
@@ -70,13 +70,13 @@
               <span class="header-auth__span-enter">Вход</span>
             </a>
 
-            <form class="enter-form" action="#" method="post">
+            <form class="enter-form" action="https://echo.htmlacademy.ru" method="post">
 
               <div class="enter-form__box">
 
-                <input class="enter-form__input" type="text" name="email" placeholder="Электронная почта" aria-label="Электронная почта">
+                <input class="enter-form__input" type="text" name="email" placeholder="Электронная почта" aria-label="Электронная почта" required>
 
-                <input class="enter-form__input" type="password" name="password" placeholder="Пароль" aria-label="Ваш пароль">
+                <input class="enter-form__input" type="password" name="password" placeholder="Пароль" aria-label="Ваш пароль" required>
 
                 <button class="enter-form__btn btn" type="submit">Войти</button>
 
@@ -295,9 +295,9 @@
             Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
           </p>
 
-          <form class="mailing-form" method="post" action="#">
+          <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
 
-            <input class="mailing-form__input" type="text" name="email" placeholder="Электроная почта"  aria-label="Электроная почта">
+            <input class="mailing-form__input" type="text" name="email" placeholder="Электроная почта"  aria-label="Электроная почта" required>
 
             <button class="mailing-form__button btn" type="submit">Отправить</button>
           </form>
@@ -372,13 +372,13 @@
     </div>
     <div class="modal-feedback">
       <p class="modal-feedback__text">Мы обязательно вам ответим!</p>
-      <form class="feedback-form" method="post" action="#">
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
 
-        <input class="feedback-form__input" type="text" name="name" placeholder="Как вас зовут?" aria-label="Как вас зовут?">
+        <input class="feedback-form__input" type="text" name="name" placeholder="Как вас зовут?" aria-label="Как вас зовут?" required>
 
-        <input class="feedback-form__input" type="text" name="email" placeholder="Ваша почта для ответа?" aria-label="Ваша почта">
+        <input class="feedback-form__input" type="text" name="email" placeholder="Ваша почта для ответа?" aria-label="Ваша почта" required>
 
-        <textarea class="feedback-form__input feedback-form__area" placeholder="Напишите что нибудь..." rows="5" cols="30" aria-label="Напишите нам"></textarea>
+        <textarea class="feedback-form__input feedback-form__area" placeholder="Напишите что нибудь..." rows="5" cols="30" aria-label="Напишите нам" required></textarea>
 
         <button class="feedback-form__btn btn" type="submit">Отправить</button>
 

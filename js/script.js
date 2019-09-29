@@ -1,6 +1,5 @@
 var map;
 
-
 function initMap() {
 
     map = new google.maps.Map(document.getElementById('map'), {
@@ -27,11 +26,13 @@ function feedback() {
     var openPopupButton = document.querySelector('.map-contacts__link');
     var closePopupButton = popupFeedback.querySelector('.feedback-form__btn_close');
     var overlay = document.querySelector('body');
+    let submitBtn = popupFeedback.querySelector('.feedback-form__btn');
+    let inputs = popupFeedback.querySelectorAll('.feedback-form__input');
 
     openPopupButton.addEventListener('click', function (evt) {
-
         evt.preventDefault();
         popupFeedback.classList.add('modal__show');
+        popupFeedback.classList.add('anim');
         overlay.classList.add('overlay');
     });
 
@@ -46,6 +47,24 @@ function feedback() {
             popupFeedback.classList.remove('modal__show');
             overlay.classList.remove('overlay');
         }
+    });
+
+    submitBtn.addEventListener('click', function() {        
+
+        for (var i = 0; i < inputs.length; i++) {
+
+            var input = inputs[i];
+        
+            if (input.value == '') {
+                popupFeedback.animate([
+                  {transform: 'translateX(2%)'},
+                  {transform: 'translateX(-2%)'},
+                  {transform: 'translateX(2%)'},
+                  {transform: 'translateX(-2%)'}
+                ], 100);             
+            }
+        }
+
     });
 };
 

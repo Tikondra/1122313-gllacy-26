@@ -23,7 +23,9 @@
 
 /*==========  GLOBAL  ==========*/
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -1814,11 +1816,6 @@ select::-ms-expand {
   margin-left: 21px;
 }
 
-.sort-fat__input,
-.sort-fill__input {
-  display: none;
-}
-
 .sort-fat__label,
 .sort-fill__label {
   display: -webkit-box;
@@ -1879,6 +1876,13 @@ select::-ms-expand {
 .sort-fat__label:hover .sort-fat__btn,
 .sort-fill__label:hover .sort-fill__btn {
   opacity: 1;
+}
+
+.sort-fat__input:focus ~ label .sort-fat__btn,
+.sort-fill__input:focus ~ label .sort-fill__btn {  
+  border-color: #fff;
+  outline: thin dotted;
+  outline: 1px dashed #fff;  
 }
 
 .filters-form__btn {

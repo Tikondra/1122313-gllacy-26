@@ -1923,11 +1923,38 @@ select::-ms-expand {
 }
 
 @keyframes popup-size {
-    0% {
-      transform: scale(0.1);
+  0% {
+    transform: scale(0.1);
   }
 
   100% {
-      transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.err {
+  animation-name: trem;
+  animation-duration: 0.3s;
+}
+
+@keyframes trem {
+  0% {
+    transform: translateX(2px);
+  }
+
+  25% {
+    transform: translateX(-2px);
+  }
+
+  50% {
+    transform: translateX(2px);
+  }
+
+  75% {
+    transform: translateX(-2px);
+  }
+
+  100% {
+    transform: translateX(2px);
   }
 }

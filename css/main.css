@@ -223,6 +223,7 @@ input {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0 auto 0 0;
   padding: 0;
 
@@ -1018,6 +1019,10 @@ td:nth-child(5) {
   width: 200px;
   margin-bottom: 20px;
   padding: 13px 0;
+}
+
+.hits__item:focus-within > .catalog-card__hover {
+  display: block;
 }
 
 .catalog-card:hover .catalog-card__hover {

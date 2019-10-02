@@ -60,13 +60,6 @@ function feedback() {
         popupFeedback.classList.remove('err');
         popupFeedback.offsetWidth = popupFeedback.offsetWidth;
         popupFeedback.classList.add('err');
-
-        // popupFeedback.animate([
-        //   {transform: 'translateX(2%)'},
-        //   {transform: 'translateX(-2%)'},
-        //   {transform: 'translateX(2%)'},
-        //   {transform: 'translateX(-2%)'}
-        //   ], 100);             
       }
     }
   });

@@ -790,6 +790,7 @@ td:nth-child(5) {
   top: -390px;
   left: -187px;
   z-index: -1;
+  max-width: none;
 }
 
 .promo__input {

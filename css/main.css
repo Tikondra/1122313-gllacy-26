@@ -1594,6 +1594,18 @@ td:nth-child(5) {
 
 /*==========  CATALOG-PAGINATION  ==========*/
 
+.catalog-paginat_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;    
+}
+
 .catalog-paginat {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1667,7 +1679,7 @@ td:nth-child(5) {
 
 .catalog-paginat__arrow_left,
 .catalog-paginat__arrow_right {
-  margin: 0 15px;
+  margin: 15px 15px 0;
 }
 
 .catalog-paginat__arrow_right {

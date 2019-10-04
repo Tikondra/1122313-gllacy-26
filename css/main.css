@@ -70,19 +70,22 @@ a {
   padding-left: 27px;
 }
 
-body.overlay::before {
-  content: '';
+.overlay { 
 
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
 
-  display: block;
+  display: none;
   height: 100%;
   width: 100%;
 
   background: rgba(0, 0, 0, 0.5);
+}
+
+.overlay__show {
+  display: block;
 }
 
 .hits__link:hover,
@@ -1490,6 +1493,8 @@ td:nth-child(5) {
 
 .modal__show {
   display: block;
+  animation-name: popup-size;
+  animation-duration: 0.7s;
 }
 
 .modal-feedback__text {
@@ -1920,11 +1925,6 @@ select::-ms-expand {
   box-shadow: inset 0 2px 1px #696969;
   background-color: #ededed;
   border: none;
-}
-
-.anim {
-  animation-name: popup-size;
-  animation-duration: 0.7s;
 }
 
 @keyframes popup-size {

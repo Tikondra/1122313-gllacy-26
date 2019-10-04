@@ -25,38 +25,49 @@ function feedback() {
   var popupFeedback = document.querySelector('.modal-feedback');
   var openPopupButton = document.querySelector('.map-contacts__link');
   var closePopupButton = popupFeedback.querySelector('.feedback-form__btn_close');
-  var overlay = document.querySelector('body');
-  let submitBtn = popupFeedback.querySelector('.feedback-form__btn');
-  let inputs = popupFeedback.querySelectorAll('.feedback-form__input');
+  var overlay = document.querySelector('.overlay');  
+  var inputs = popupFeedback.querySelectorAll('.feedback-form__input');
+
+  var form = popupFeedback.querySelector(".feedback-form");
+  var login = popupFeedback.querySelector(".feedback-form__input_name");  
 
   openPopupButton.addEventListener('click', function (evt) {
     evt.preventDefault();
-    popupFeedback.classList.add('modal__show');
-    popupFeedback.classList.add('anim');
-    overlay.classList.add('overlay');
+    popupFeedback.classList.add('modal__show');    
+    overlay.classList.add('overlay__show');
+    login.focus();
   });
 
-  closePopupButton.addEventListener('click', function () {
+  closePopupButton.addEventListener('click', function (evt) {
+    evt.preventDefault();
     popupFeedback.classList.remove('modal__show');
-    overlay.classList.remove('overlay');
+    overlay.classList.remove('overlay__show');
+    popupFeedback.classList.remove('err');
   });
 
   document.addEventListener('keydown', function (evt) {
 
     if (evt.keyCode === 27) {
       popupFeedback.classList.remove('modal__show');
-      overlay.classList.remove('overlay');
+      overlay.classList.remove('overlay__show');
+      popupFeedback.classList.remove('err');
     }
   });
 
-  submitBtn.addEventListener('click', function() {
+  overlay.addEventListener('click', function() {
+    popupFeedback.classList.remove('modal__show');
+    overlay.classList.remove('overlay__show');
+    popupFeedback.classList.remove('err');
+  });
 
+  form.addEventListener("submit", function (evt) {
     for (var i = 0; i < inputs.length; i++) {
 
       var input = inputs[i];
 
       if (input.value == '') {
 
+        evt.preventDefault();
         popupFeedback.classList.remove('err');
         popupFeedback.offsetWidth = popupFeedback.offsetWidth;
         popupFeedback.classList.add('err');

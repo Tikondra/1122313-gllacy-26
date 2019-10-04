@@ -370,15 +370,16 @@
         <a class="map-contacts__link btn" href="#">Форма обратной связи</a>
       </div>
     </div>
+    <div class="overlay"></div>
     <div class="modal-feedback">
       <p class="modal-feedback__text">Мы обязательно вам ответим!</p>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
 
-        <input class="feedback-form__input" type="text" name="name" placeholder="Как вас зовут?" aria-label="Как вас зовут?" required>
+        <input class="feedback-form__input feedback-form__input_name" type="text" name="name" placeholder="Как вас зовут?" aria-label="Как вас зовут?">
 
-        <input class="feedback-form__input" type="text" name="email" placeholder="Ваша почта для ответа?" aria-label="Ваша почта" required>
+        <input class="feedback-form__input" type="text" name="email" placeholder="Ваша почта для ответа?" aria-label="Ваша почта">
 
-        <textarea class="feedback-form__input feedback-form__area" placeholder="Напишите что нибудь..." rows="5" cols="30" aria-label="Напишите нам" required></textarea>
+        <textarea class="feedback-form__input feedback-form__area" placeholder="Напишите что нибудь..." rows="5" cols="30" aria-label="Напишите нам"></textarea>
 
         <button class="feedback-form__btn btn" type="submit">Отправить</button>
 

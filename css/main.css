@@ -110,6 +110,7 @@ a {
   font-size: 18px;
   font-weight: 700;
   text-align: center;
+  line-height: 24px;
   color: #ffffff;
 
   -webkit-box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
@@ -170,13 +171,6 @@ a {
   line-height: 24px;
 }
 
-input {
-  color: #323232;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-}
-
 /*==========  HEADER  ==========*/
 
 .page-header {
@@ -206,13 +200,16 @@ input {
 }
 
 .page-header__tel {
+  display: block;
+  margin-top: 6px;
   font-size: 22px;
-  line-height: 30px;
+  line-height: 24px;
   letter-spacing: -0.5px;
   text-decoration: none;
 }
 
 .logo {
+  width: 154px;
   margin-right: 9px;
   padding-top: 9px;
 }
@@ -227,6 +224,7 @@ input {
   -ms-flex-align: center;
   align-items: center;
   flex-wrap: wrap;
+  width: 650px;
   margin: 0 auto 0 0;
   padding: 0;
 
@@ -235,22 +233,13 @@ input {
 
 .header-menu__item {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 42px;
-
   line-height: 18px;
 }
 
 .header-menu__link {
   position: relative;
-  display: block;
-  height: 32px;
-  padding: 6px 14px 10px;
+  display: block;  
+  padding: 6px 14px 8px;
   text-decoration: none;
 }
 
@@ -334,7 +323,7 @@ input {
 
   font-size: 14px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 16px;
   color: #323232;
 
   text-decoration: none;
@@ -536,7 +525,10 @@ input {
 .enter-form__input {
   width: 100%;
   padding: 8px 13px 10px;
-
+  color: #323232;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
   background-color: #ffffff;
@@ -635,31 +627,36 @@ input {
   vertical-align: baseline;
 }
 
-td {
+.table-row__item_span {
+  color: #999999;
+}
+
+.table-row__item {
   padding: 10px 5px;
 }
 
-td:nth-child(1) {
+.table-row__item:nth-child(1) {
   width: 15px;
 }
 
-td:nth-child(2) {
-  width: 41px;
+.table-row__item:nth-child(2) {
+  width: 34px;
   padding: 2px 0 2px;
   vertical-align: top;
 }
 
-td:nth-child(3) {
-  width: 220px;
+.table-row__item:nth-child(3) {
+  width: 190px;
   padding-left: 0;
 }
 
-td:nth-child(4) {
+.table-row__item:nth-child(4) {
   width: 90px;
+  padding-left: 10px;
 }
 
-td:nth-child(5) {
-  width: 79px;
+.table-row__item:nth-child(5) {
+  width: 70px;
   text-align: center;
 }
 
@@ -858,7 +855,7 @@ td:nth-child(5) {
 
   min-height: 229px;
   width: 560px;
-  padding: 23px 21px 25px 18px;
+  padding: 15px 21px 23px 18px;
 
   background-position: -50px -95px;
   border-radius: 15px;
@@ -877,8 +874,8 @@ td:nth-child(5) {
 
 .special__title {
   margin: 0;
-  margin-bottom: 26px;
-
+  margin-bottom: 16px;
+  line-height: 41px;
   font-size: 35px;
   font-weight: 700;
 }
@@ -896,19 +893,17 @@ td:nth-child(5) {
   -ms-flex-item-align: end;
   align-self: flex-end;
   width: 165px;
-  padding: 10px 20px;
-  margin-top: auto;
-  line-height: 24px;
+  padding: 8px 20px 12px;
+  margin-top: auto;  
 }
 
 .special__link_chocolate {
   -ms-flex-item-align: end;
   align-self: flex-end;
   width: 189px;
-  padding: 10px 19px;
+  padding: 8px 19px 12px;
   margin-top: auto;
-  margin-bottom: 1px;
-  line-height: 24px;
+  margin-bottom: 1px;  
 }
 
 /*==========  HITS  ==========*/
@@ -1245,7 +1240,10 @@ td:nth-child(5) {
   -ms-flex-positive: 1;
   flex-grow: 1;
   padding: 10px 0 10px 15px;  
-
+  color: #323232;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
   background: #ffffff;
   border: 1px solid rgba(178, 178, 178, 0.52);
   border-radius: 8px;
@@ -1297,7 +1295,7 @@ td:nth-child(5) {
   flex-direction: column;
 
   width: 302px;
-  padding: 30px 25px;
+  padding: 28px 25px;
 
   color: #323232;
 
@@ -1307,11 +1305,15 @@ td:nth-child(5) {
 
 .map-contacts__text {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 18px;
 
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+}
+
+.map-contacts__text_2 {
+  margin-bottom: 25px;
 }
 
 .map-contacts__span {
@@ -1322,12 +1324,18 @@ td:nth-child(5) {
   text-decoration: none;
 }
 
+.map-contacts__span_tel {
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 2px;
+  letter-spacing: 0.45px;
+}
+
 .map-contacts__link {
   width: 252px;
   padding: 10px 25px;
   font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
+  font-weight: 700;  
 }
 
 /*==========  FOOTER  ==========*/
@@ -1348,7 +1356,7 @@ td:nth-child(5) {
   margin: 0;
   margin-right: 214px;
   margin-left: 1px;
-  margin-top: 9px;
+  margin-top: 15px;
   padding: 0;
 
   display: -webkit-box;
@@ -1366,7 +1374,7 @@ td:nth-child(5) {
 .footer-nav {
   width: 326px;
   margin: 0;
-  margin-top: 11px;
+  margin-top: 16px;
   padding: 0;
 
   display: -webkit-box;
@@ -1482,8 +1490,8 @@ td:nth-child(5) {
   z-index: 101;
 
   display: none;
-  width: 480px;
-  padding: 25px;
+  width: 478px;
+  padding: 16px 25px 26px 23px;
   margin-left: -240px;
   margin-top: -239px;
 
@@ -1498,7 +1506,7 @@ td:nth-child(5) {
 }
 
 .modal-feedback__text {
-  margin: 0 0 15px;
+  margin: 0 0 9px;
   color: #323232;
   font-size: 24px;
   font-weight: 500;
@@ -1525,8 +1533,11 @@ td:nth-child(5) {
 .feedback-form__input {
   min-width: 267px;
   margin: 10px 0;
-  padding: 15px;
-
+  padding: 9px 15px;
+  color: #323232;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
   border: 1px solid rgba(178, 178, 178, 0.52);
   background-color: #ffffff;
   border-radius: 5px;
@@ -1536,20 +1547,21 @@ td:nth-child(5) {
   -ms-flex-item-align: stretch;
   -ms-grid-row-align: stretch;
   align-self: stretch;
+  min-height: 155px;
 }
 
 .feedback-form__btn {
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding: 10px 25px;
-  line-height: 24px;
+  margin-top: 15px;  
   border: none;
 }
 
 .feedback-form__btn_close {
   position: absolute;
-  top: -50px;
-  right: -10px;
+  top: -39px;
+  right: -8px;
 
   width: 18px;
   height: 17px;
@@ -1650,6 +1662,7 @@ td:nth-child(5) {
 
 .catalog__hr {
   opacity: 0.3;
+  margin: 0;
 }
 
 .catalog-paginat__arrow_left,
@@ -1857,6 +1870,7 @@ select::-ms-expand {
 .sort-fat__btn,
 .sort-fill__btn {
   display: inline-block;
+  vertical-align: middle;
   width: 22px;
   height: 22px;
 

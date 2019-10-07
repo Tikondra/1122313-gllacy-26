@@ -282,7 +282,7 @@ a {
 
 .dropdown {
   position: absolute;
-  top: 42px;
+  top: 37px;
   left: -6px;
 
   display: none;
@@ -317,9 +317,13 @@ a {
   width: 143px;      
 }
 
+.dropdown__item:not(.dropdown__item_news) {
+  margin-bottom: 3.5px;
+}
+
 .dropdown__link {
   display: block;
-  padding: 8px 20px 9px;
+  padding: 6px 20px;
 
   font-size: 14px;
   font-weight: 400;
@@ -1794,7 +1798,7 @@ a {
   appearance: none;
 }
 
-select::-ms-expand {
+.sort__select::-ms-expand {
   display: none;
 }
 
